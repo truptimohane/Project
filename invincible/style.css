@@ -1,0 +1,134 @@
+.btnHamburger_2i064{position:relative;height:44px;width:44px;float:right;z-index:10}
+.c-item{
+    height: 500px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-caption{
+    /* top: 0; */
+} 
+
+
+.container_PeBi9 {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.ratio iframe{
+    border-radius: 10px 10px;
+}
+
+.container_x img{
+   
+}
+
+.stories a img{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px 20px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer{
+    background-color: black;
+}
+
+.orange-color{
+    color: #de5824!important;
+}
+
+.carousel-item{
+    height: 500px;
+    min-width: 300px;
+}
+
+.bg-1{
+    background-image:url(https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invinciblengo.org/_nuxt/img/dabf1ab.jpg) ;
+}
+
+.bg-2{
+    background-image: url(https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invinciblengo.org/_nuxt/img/13eaaff.jpg);
+}
+
+.bg-3{
+   background-image: url(https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invinciblengo.org/_nuxt/img/809181d.jpg);
+}
+
+.bg-4{
+   background-image: url(https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invinciblengo.org/_nuxt/img/961a8d9.jpg);
+}
+
+.bg-5{
+   background-image: url(https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invinciblengo.org/_nuxt/img/3cffb54.jpg);
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.bg-1,.bg-2,.bg-3,.bg-4,.bg-5{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* main */
+.container_PeBi9 {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.ratio iframe{
+    border-radius: 10px 10px;
+}
+
+.navbar{
+    position: fixed;
+}
+
+/* experience */
+.col-sm-4 img{
+    border-radius: 15px 15px;
+}
+
+#more {
+    display: none;
+}
+
+#more2, #more1{
+    display: none;
+}
+
+
+/* review */
+.people-review .invincible-review{
+    font-size: .875rem;
+    color: #717171;
+    border-top: 2px solid #e3e3e3;
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+/* banner */
+.banner{
+    text-align: left;
+    position: absolute;
+    left: -70px;
+    top: -50px;
+}
+
+.trekking-organization{
+    text-align: left;
+    position: absolute;
+    left: -70px;
+    top: 100px;
+}

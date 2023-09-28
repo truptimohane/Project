@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  width: 100%;
+  background-color: transparent;
+}
+
+.nav-item a i {
+  color: #de5824;
+}
+
+/* add */
+.navbar-toggler span {
+  color: #fff;
+}
+
+.nav-item a i {
+  color: #de5824;
+}
+
+.nav-link {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#login {
+  padding-bottom: 70px;
+  border-bottom: 2px solid #717171;
+}
+
+.number {
+  font-size: 18px;
+}
+
+.contact {
+  color: #de5824;
+}
+
+.content {
+  padding-bottom: 1rem;
+  background: #de5824;
+  color: #fff;
+  font-size: 15px;
+}
+
+.content h3 {
+  font-weight: 400;
+}
+
+.content p {
+  opacity: 0.6;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.carousel-indicators {
+  background: rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  border-radius: 10px;
+  padding: 5px;
+  left: 25%;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .carousel-indicators {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .carousel-indicators {
+    left: 5%;
+  }
+}
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.img_container {
+  position: relative;
+  cursor: pointer;
+}
+
+.img_container::after {
+  content: "";
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjMWExYTFhIiBkPSJNNTAsOS4yQzI3LjUsOS4yLDkuMiwyNy41LDkuMiw1MGMwLDIyLjUsMTguMyw0MC44LDQwLjgsNDAuOFM5MC44LDcyLjUsOTAuOCw1MA0KCQlDOTAuOCwyNy41LDcyLjUsOS4yLDUwLDkuMnogTTUwLDgzLjRjLTE4LjQsMC0zMy40LTE0LjktMzMuNC0zMy40UzMxLjYsMTYuNiw1MCwxNi42UzgzLjQsMzEuNiw4My40LDUwUzY4LjQsODMuNCw1MCw4My40eiIvPjxwYXRoIGZpbGw9IiMxYTFhMWEiIGQ9Ik00MS41LDMxLjJMNjguOSw0N2MyLjMsMS4zLDIuMyw0LjcsMCw2TDQxLjUsNjguOGMtMi4zLDEuMy01LjItMC4zLTUuMi0zVjM0LjINCgkJQzM2LjMsMzEuNSwzOS4yLDI5LjksNDEuNSwzMS4yeiIvPjwvc3ZnPg==)
+    no-repeat 50%;
+  background-size: contain;
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+#player {
+  display: none;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background-color: #000;
+}
+
+.visibleDiv {
+  display: block !important;
+}
+
+/* advanture */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.media {
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+.icon i {
+  color: #de5824;
+  font-size: 25px;
+}
+
+.heading {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -10px;
+  color: #1c1c1c;
+  margin-bottom: -8px;
+}
+
+small {
+  margin-left: 2px;
+  font-size: 12px;
+}
+
+#about {
+  position: relative;
+  top: 15px;
+  color: #de5824;
+  text-decoration: none;
+  margin-top: 10px;
+  border: 2px solid #de5824;
+  padding: 5px;
+}
+
+/* fees */
+.fees {
+  margin-bottom: -1rem;
+}
+
+.fees .item-fees {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.fees .item-fees1 {
+  margin-bottom: 1rem;
+}
+
+.fees .item-fees1 .icon-section1 {
+  width: 30px;
+  height: 30px;
+  background: #e3e3e3;
+  color: #393939;
+  border-radius: 50%;
+  font-size: 20px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #de5824;
+}
+
+.fees .item-fees .icon-section {
+  width: 64px;
+  height: 64px;
+  background: #e3e3e3;
+  color: #393939;
+  border-radius: 50%;
+  font-size: 32px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #de5824;
+}
+
+/* place- join us  */
+.best-place {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.container_PeBi9 {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: -45px;
+}
+
+.event-image {
+  /* margin-top: -30px; */
+  display: inline-block;
+  /* width: 200px; */
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.event-image a {
+  text-decoration: none;
+}
+
+.card-section {
+  height: 220px;
+  width: 180px;
+  border-radius: 10px;
+}
+
+.card-section img {
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.card-body h4 {
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+}
+
+/* book now*/
+.d-example {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.d-example00 {
+  text-decoration: none;
+}
+
+.d-example00 p {
+  margin-top: 20px;
+  background: #de5824;
+  border-radius: 15px;
+  color: white;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+/* btn */
+.btn-color {
+  border: 2px solid #de5824;
+  color: #de5824;
+}
+
+.btn-color:hover {
+  background: #de5824;
+  color: white;
+}
+
+.button {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.fixed-date {
+  border: 2px solid #de5824;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.fixed-date1 {
+  border: 2px solid #393939;
+  padding: 5px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+/* book */
+@media screen and(max-width:767px) {
+  .book {
+    border-bottom: 1px solid #e3e3e3;
+  }
+}
+
+.book-btn {
+  cursor: pointer;
+}
+
+.card-section1 {
+  height: 240px;
+  width: 270px;
+  border-radius: 10px;
+}
+
+.card-section1 img {
+  height: 180px;
+  border-radius: 20px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.card-body h5 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #de5824;
+}
+.card-body p {
+  font-size: 13px;
+}
+
+/* footer  start*/
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.list-unstyled li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.branches a {
+  color: #de5824;
+}
+
+.branches a:hover {
+  opacity: 0.7;
+}
+
+.s-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.office-no {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Copyright a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.font-icon a {
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+
+.font-icon a i {
+  color: black;
+  font-size: 18px;
+}
+
+.bottom-end {
+  font-size: 14px;
+  font-weight: 450;
+}
+/* footer  end */
+
+/* attractions */
+.stories a img {
+  height: 150px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.stories h6 {
+  margin-left: 10px;
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+/* videos */
+.container_PeBi9 {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: -45px;
+}
+
+.exp iframe {
+  border-radius: 10px;
+}
+
+.exp {
+  display: inline-block;
+  width: 300px;
+  border-radius: 10px 10px;
+  overflow: hidden;
+}
+
+/* From ₹5,500 / person */
+.per-person {
+  background: #f1f1f1;
+  border-top: 2px solid #e3e3e3;
+  border-bottom: 2px solid #e3e3e3;
+  position: sticky;
+  bottom: 0;
+}
+
+#travel-booking a {
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+  background: #de5824;
+  color: #fff;
+}
+
+@media screen and (max-width: 350px) {
+  #travel-booking a {
+    padding: 5px;
+    font-weight: 300;
+    display: inline-block;
+  }
+
+  .person {
+    margin-left: -20px;
+  }
+}
+
+/* From ₹5,500 / person */
+
+/* schedule */
+.line {
+  border-left: 2px solid #e3e3e3;
+  height: 1250px;
+}
+
+.dot-red {
+  font-size: 35px;
+  color: #de5824;
+  margin-left: -7px;
+  margin-top: -23px;
+}
+
+.dot-text,
+.journey {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 570px) {
+  .jaisalmer-img img {
+    width: -webkit-fill-available;
+  }
+}
+
+.day-1 {
+  margin-top: -5px;
+}
+
+.take-border {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+.know-more {
+  color: #de5824;
+}
+
+.image {
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 767px) {
+  .image {
+    width: 100%;
+  }
+}

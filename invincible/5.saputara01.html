@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap link start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <!-- Bootstrap link end -->
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- font awesome cdn -->
+
+    <!-- font-family start -->
+    <link data-n-head="1" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" async>
+    <!-- font-family end -->
+
+    <link rel="stylesheet" href="5.saputara.css">
+
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="5.saputara.js"></script>
+
+</head>
+
+<body>
+
+    <!-- video -->
+    <div id="player">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6XfiXEmqWmc?si=xeK5r1xM9rInObZX"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+
+    <!-- hero -->
+    <div>
+        <header>
+            <nav class="navbar" id="navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="01.index.html"><img
+                            src="https://invinciblengo.org/_nuxt/img/1a82462.svg" alt="" height="30" width="150"
+                            srcset=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"
+                                style="margin-left: auto;"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="01.index.html"><i
+                                            class="fa-solid fa-house ps-3"></i><span class="ms-3 ps-1">Home</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2.event.html"><i class=" fa-solid fa-image ps-3"></i>
+                                        <span class="ms-3  ps-0">Events</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-download ps-3"></i><span
+                                            class="ms-3  ps-1">Downloads</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid  fa-building ps-3"></i>
+                                        <span class="ms-3 ps-1">About</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class=" fa-solid fa-users ps-3"></i>
+                                        <span class="ms-3">Team</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-phone ps-3"></i>
+                                        <span class="ms-3">Contact</span> </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="login"><i class=" fa-solid fa-user ps-3"></i>
+                                        <span class="ms-3 ps-1"> Login</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"></i>
+                                        <span class="ms-3 ps-1 " style="color: #de5824;"> Contact</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-dark " href="#" style="text-decoration: none;"><i
+                                            class="fa-sharp fa-solid fa-phone text-dark ps-3"></i>
+                                        <span class="ms-3 number">+91 9099 400 699</span> </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-dark " href="#" style="text-decoration: none;"><i
+                                            class="fa-sharp fa-solid fa-phone text-dark ps-3"></i>
+                                        <span class="ms-3 number">+91 9913 800 699</span> </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="demo" class="carousel slide " data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                    style="border-radius: 50%; background: white;width: 10px; height: 0px;"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="" aria-current="true"
+                    style="border-radius: 50%; background: white;width: 10px;  height: 0px;"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class=""
+                    style="border-radius: 50%; background: white;width: 10px; height: 0px;"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class=""
+                    style="border-radius: 50%; background: white;width: 10px; height: 0px;"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4" class=""
+                    style="border-radius: 50%; background: white;width: 10px; height: 0px;"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5" class=""
+                    style="border-radius: 50%; background: white;width: 10px; height: 0px;"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="6" class=""
+                    style="border-radius: 50%; background: white;width: 10px; height: 0px;"></button>
+            </div>
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item  active" 0>
+                    <div class="img_container">
+                        <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://img.youtube.com/vi/6XfiXEmqWmc/maxresdefault.jpg"
+                            alt="" srcset="" width="100%">
+                    </div>
+
+                </div>
+                <div class="carousel-item " 1>
+                    <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/3744df65-c3f2-4f7c-b75f-095e77eb59f8"
+                        alt="" srcset="" width="100%">
+                </div>
+                <div class="carousel-item" 2>
+                    <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/a440d2ef-f51a-4cd3-9f19-e4e0310f0bed"
+                        alt="" srcset="" width="100%">
+                </div>
+                <div class="carousel-item" 3>
+                    <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/598a18c6-a2e4-4e26-af82-889f0eddd3c0"
+                        alt="" srcset="" width="100%">
+                </div>
+                <div class="carousel-item" 4>
+                    <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/cb52a39d-44be-43a9-9340-89d3b8b95ef9"
+                        alt="" srcset="" width="100%">
+                </div>
+                <div class="carousel-item" 5>
+                    <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/074df92f-19a1-4a3d-9544-e9022135b58e"
+                        alt="" srcset="" width="100%">
+                </div>
+                <div class="carousel-item" 6>
+                    <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/4a891ffa-0aee-4bfe-8987-2fe918113467"
+                        alt="" srcset="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- advanture -->
+    <div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-lg-8">
+                    <div class="mt-5">
+                        <h3 style="color: #de5824;">Saputara Adventure Camp</h3>
+                        <p class="text-secondary" style="font-size: 17px;">Simply Kashmir of Gujarat!
+                        </p>
+                        <div class="">
+                            <div class="form-row">
+                                <div class="col-6 col-md-3">
+                                    <div class="media">
+                                        <div class="icon ms-2">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                        </div>
+                                        <div class="media-text ms-2">
+                                            <div class="heading">Duration</div>
+                                            <small class="text-secondary">3 days/2
+                                                nights</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="media">
+                                        <div class="icon ms-2">
+                                            <i class="fa-solid fa-map"></i>
+                                        </div>
+                                        <div class="media-text ms-2">
+                                            <div class="heading">Difficulty</div>
+                                            <small class="text-secondary">Easy</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="media">
+                                        <div class="icon ms-2">
+                                            <i class="fa-solid fa-address-book"></i>
+                                        </div>
+                                        <div class="media-text ms-2">
+                                            <div class="heading">Age Group</div>
+                                            <small class="text-secondary">6-35 years</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="media">
+                                        <div class="icon ms-2">
+                                            <i class="fa-solid fa-image"></i>
+                                        </div>
+                                        <div class="media-text ms-2">
+                                            <div class="heading">Max Altitude</div>
+                                            <small class="text-secondary">3,000 ft</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-secondary">
+                    <div class="">
+                        <h5>About</h5>
+                        <div class="text">
+                            <p class="text-secondary" style="font-size: 15px;">Saputara hill station is situated in the
+                                district of Dang. It is a part of the Sahyadri range of mountains and the highest point
+                                is at an altitude of 1081 metres from sea level. After the very first rain of the
+                                season, the whole area comes out full of greenery, frequent waterfalls and gushing
+                                streams. Saputara Adventure Camp is all about feeling the thrill of camping in these
+                                most beautiful hills<span id="dots">...</span><span id="more">The participants will stay
+                                    in tents, visit tourist places and hike up to nearby hills. The city has been
+                                    developed as a Hill Station by the government and is a hot favourite place of
+                                    tourists all the way coming from Gujarat, Nashik and Bombay. The place is also
+                                    famous for its rich tribal heritage and festivals. Many museums are here showing the
+                                    culture of the Dangs, the local</span><span style="color: #de5824; font-size: 15px;"
+                                    onclick="myFunction()" id="myBtn">Read
+                                    more</span></p>
+                        </div>
+                        <div><a href="#" id="about"><i class="fa-solid fa-download"></i> Brochure</a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 d-lg-block d-none">
+                    <div class="card mt-5" style="box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15) ;">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <span class="h3 d-inline">
+                                    ₹5,500
+                                </span>
+                                <span class="font-size-sm">
+                                    / person
+                                </span>
+                            </div>
+                            <div class="font-size-sm mb-2">Includes</div>
+                            <div class="fees">
+                                <div class="row no-gutters">
+                                    <div class="col-4 col-lg-6">
+                                        <div title="Travel" class="item-fees1 d-flex">
+                                            <div class="icon-section1"><i class="fa-solid fa-bus"></i></div>
+                                            <div class="small text_2ouJc mt-1 ms-2">Travelling</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-6">
+                                        <div title="Food" class="item-fees1 d-flex">
+                                            <div class="icon-section1"> <i class="fa-solid fa-utensils"></i></div>
+                                            <div class="small text_2ouJc mt-1 ms-2">Food</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-6">
+                                        <div title="Stay on sharing basis" class="item-fees1 d-flex">
+                                            <div class="icon-section1"><i class="fa-solid fa-image"></i></div>
+                                            <div class="small text_2ouJc mt-1 ms-2">Stay</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-6">
+                                        <div title="Activities" class="item-fees1 d-flex">
+                                            <div class="icon-section1"><i class="fa-solid fa-leaf"></i></div>
+                                            <div class="small text_2ouJc mt-1 ms-2">Activities</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-6">
+                                        <div title="Guide" class="item-fees1 d-flex">
+                                            <div class="icon-section1"> <i class="fa-regular fa-address-book"></i>
+                                            </div>
+                                            <div class="small text_2ouJc mt-1 ms-2">Guide</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-6">
+                                        <div title="First Aid" class="item-fees1 d-flex">
+                                            <div class="icon-section1"><i class="fa-solid fa-kit-medical"></i></div>
+                                            <div class="small text_2ouJc mt-1 ms-2">First Aid</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking-section1">
+                                <div class="modal fade" id="exampleModalToggle00" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel">Select Package
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Join us from</p>
+                                                <div class="btn-section d-flex flex-wrap">
+                                                    <button type="button" class="btn text-light me-2"
+                                                        style="background: #de5824;">Ahmedabad</button>
+                                                    <button type="button" class="btn btn-color  me-2">Baroda</button>
+                                                    <button type="button" class="btn btn-color  me-2">Surat</button>
+                                                    <button type="button" class="btn btn-color  me-2">Matheran</button>
+                                                    <button type="button" class="btn btn-color  me-2">Mumbai</button>
+                                                </div>
+                                                <div class="mt-3"
+                                                    style="border-radius: 10px; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) ;">
+                                                    <div class="d-flex">
+                                                        <img class="py-2 ps-2 pe-2"
+                                                            src="https://img.invinciblengo.org/iconscout/f:jpeg/w:64/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/package/7e6c62ce-9359-4686-99e9-c4c52015a368"
+                                                            alt="" srcset="" height="80" width="80"
+                                                            style="border-radius: 20px;">
+                                                        <div class="ms-3">
+                                                            <h6 class="mt-3" style="color: #000;">Join from
+                                                                Ahmedabad
+                                                            </h6>
+                                                            <div class="d-flex mt-3 text-secondary">
+                                                                <p>₹5500 </p>
+                                                                <p style="margin-left: 150px;">
+                                                                    <span>
+                                                                        <i class="fa-solid fa-calendar-days"></i> 3
+                                                                        days
+                                                                        / 2 nights
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-example00" data-bs-toggle="modal" href="#exampleModalToggle00"
+                                    role="button">
+                                    <p class="text-center py-2">Book Now</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fees -->
+    <div style=" position: relative; ">
+        <div class="bg-light d-block d-lg-none container mt-5" style=" background: #f8f8f8">
+            <div>
+                <h5 class="text-secondary">Fees Includes</h5>
+                <div class="fees">
+                    <div class="row no-gutters">
+                        <div class="col-4 col-lg-6">
+                            <div title="Travel" class="item-fees">
+                                <div class="icon-section"><i class="fa-solid fa-bus"></i></div>
+                                <div class="small text_2ouJc">Travelling</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-6">
+                            <div title="Food" class="item-fees">
+                                <div class="icon-section"> <i class="fa-solid fa-utensils"></i></div>
+                                <div class="small text_2ouJc">Food</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-6">
+                            <div title="Stay on sharing basis" class="item-fees">
+                                <div class="icon-section"><i class="fa-solid fa-image"></i></div>
+                                <div class="small text_2ouJc">Stay</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-6">
+                            <div title="Activities" class="item-fees">
+                                <div class="icon-section"><i class="fa-solid fa-leaf"></i></div>
+                                <div class="small text_2ouJc">Activities</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-6">
+                            <div title="Guide" class="item-fees">
+                                <div class="icon-section"> <i class="fa-regular fa-address-book"></i></div>
+                                <div class="small text_2ouJc">Guide</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-6">
+                            <div title="First Aid" class="item-fees">
+                                <div class="icon-section"><i class="fa-solid fa-kit-medical"></i></div>
+                                <div class="small text_2ouJc">First Aid</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 collapse" id="__BVID__40" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- select place / join us-->
+    <section class="experience mt-5 " style="background: #f8f8f8;">
+        <div class="container">
+            <div>
+                <h2 class="pt-3 ps-1" style="color: #de5824; font-size: 23px;">Join us from</h2>
+                <div class="m-n5 ps-5 pe-5 pt-3 pb-3 container_PeBi9 ">
+                    <div class="event-image me-3 join-ahmedabad">
+                        <div class="card-section ahmedabad">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:200/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/package/f08f451f-8985-464a-9c39-ac15753972c0"
+                                class="card-img-top" alt="...">
+                            <div class="card-body ps-3 pe-2">
+                                <h4>Ahmedabad</h4>
+                                <div class="d-flex justify-content-between text-secondary">
+                                    <p>₹ 4,999/-</p>
+                                    <p><i class="fa-solid fa-calendar-days"></i> 3 days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-image me-3 join-saputara">
+                        <div class="card-section saputara">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:200/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/package/316ec2cd-14fc-439d-a422-18f87e537a4b"
+                                class="card-img-top" alt="...">
+                            <div class="card-body ps-3 pe-2">
+                                <h4>saputara</h4>
+                                <div class="d-flex justify-content-between text-secondary">
+                                    <p>₹ 999/-</p>
+                                    <p><i class="fa-solid fa-calendar-days"></i> 3 days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-image me-3 join-baroda">
+                        <div class="card-section baroda">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:200/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/package/c9fea758-7d9d-4b14-9e51-756d4627e744"
+                                class="card-img-top" alt="...">
+                            <div class="card-body ps-3 pe-2">
+                                <h4>Baroda</h4>
+                                <div class="d-flex justify-content-between text-secondary">
+                                    <p>₹ 2,499/-</p>
+                                    <p><i class="fa-solid fa-calendar-days"></i> 3 days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-image me-3 join-surat">
+                        <div class="card-section surat">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:200/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/package/9dc94ace-6bbd-4c37-b7b8-73ec3faed9d4"
+                                class="card-img-top" alt="...">
+                            <div class="card-body ps-3 pe-2">
+                                <h4>Surat</h4>
+                                <div class="d-flex justify-content-between text-secondary">
+                                    <p>₹ 2,499/-</p>
+                                    <p><i class="fa-solid fa-calendar-days"></i> 3 days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-image me-3 join-rajkot">
+                        <div class="card-section rajkot">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:200/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/package/6b55de76-dd90-46cf-92ea-4393c8d3fbdb"
+                                class="card-img-top" alt="...">
+                            <div class="card-body ps-3 pe-2">
+                                <h4>Rajkot</h4>
+                                <div class="d-flex justify-content-between text-secondary">
+                                    <p>₹ 3,999/-</p>
+                                    <p><i class="fa-solid fa-calendar-days"></i> 3 days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- select place end -->
+
+    <!-- dates -->
+    <div>
+        <!-- dates from ahmedabad -->
+        <div class="date-ahmedabad" style="background: #f8f8f8;">
+            <div class="container">
+                <p class="mt-2" style="font-weight: 500;">Dates from Ahmedabad</p>
+                <div class="btn-section">
+                    <button type="button" class="btn text-light me-3" style="background: #de5824;">September</button>
+                    <button type="button" id="october" class="btn btn-color  me-3">October</button>
+                    <button type="button" id="november" class="btn btn-color  me-3">November</button>
+                    <button type="button" id="december" class="btn btn-color  me-3">December</button>
+                    <button type="button" id="january" class="btn btn-color  me-3">January</button>
+                    <button type="button" id="february" class="btn btn-color  me-3">February</button>
+                    <button type="button" id="march" class="btn btn-color  me-3">March</button>
+                </div>
+
+                <div class="mt-2 ms-2 py-6 container_PeBi9" style="background: #f8f8f8;">
+                    <div class="container">
+                        <div class="sep01">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">29</h6>
+                            </div>
+                        </div>
+                        <div class="oct01" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">06</h6>
+                                <h6 class="me-5 fixed-date1">13</h6>
+                                <h6 class="me-5 fixed-date1">20</h6>
+                                <h6 class="me-5 fixed-date1">27</h6>
+                            </div>
+                        </div>
+                        <div class="nov01" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">03</h6>
+                                <h6 class="me-5 fixed-date1">10</h6>
+                                <h6 class="me-5 fixed-date1">17</h6>
+                                <h6 class="me-5 fixed-date1">24</h6>
+                            </div>
+                        </div>
+                        <div class="dec01" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">01</h6>
+                                <h6 class="me-5 fixed-date1">08</h6>
+                                <h6 class="me-5 fixed-date1">15</h6>
+                                <h6 class="me-5 fixed-date1">22</h6>
+                                <h6 class="me-5 fixed-date1">29</h6>
+                            </div>
+                        </div>
+                        <div class="jan01" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">05</h6>
+                                <h6 class="me-5 fixed-date1">12</h6>
+                                <h6 class="me-5 fixed-date1">19</h6>
+                                <h6 class="me-5 fixed-date1">26</h6>
+                            </div>
+                        </div>
+                        <div class="feb01" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">02</h6>
+                                <h6 class="me-5 fixed-date1">09</h6>
+                                <h6 class="me-5 fixed-date1">16</h6>
+                                <h6 class="me-5 fixed-date1">23</h6>
+                            </div>
+                        </div>
+                        <div class="march01" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">01</h6>
+                                <h6 class="me-5 fixed-date1">08</h6>
+                                <h6 class="me-5 fixed-date1">15</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- dates from saputara -->
+        <div class="date-saputara" style="background: #f8f8f8; display: none;">
+            <div class="container">
+                <p class="mt-2" style="font-weight: 500;">Dates from Saputara</p>
+                <div class="btn-section">
+                    <button type="button" class="btn text-light me-3" id="september02"
+                        style="background: #de5824;">September</button>
+                    <button type="button" id="october02" class="btn btn-color  me-3">October</button>
+                    <button type="button" id="november02" class="btn btn-color  me-3">November</button>
+                    <button type="button" id="december02" class="btn btn-color  me-3">December</button>
+                    <button type="button" id="january02" class="btn btn-color  me-3">January</button>
+                    <button type="button" id="february02" class="btn btn-color  me-3">February</button>
+                    <button type="button" id="march02" class="btn btn-color  me-3">March</button>
+                </div>
+
+                <div class="mt-2 ms-2 py-6 container_PeBi9" style="background: #f8f8f8;">
+                    <div class="container">
+                        <div class="sep02">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">29</h6>
+                            </div>
+                        </div>
+                        <div class="oct02" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">06</h6>
+                                <h6 class="me-5 fixed-date1">13</h6>
+                                <h6 class="me-5 fixed-date1">20</h6>
+                                <h6 class="me-5 fixed-date1">27</h6>
+                            </div>
+                        </div>
+                        <div class="nov02" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">03</h6>
+                                <h6 class="me-5 fixed-date1">10</h6>
+                                <h6 class="me-5 fixed-date1">17</h6>
+                                <h6 class="me-5 fixed-date1">24</h6>
+                            </div>
+                        </div>
+                        <div class="dec02" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">01</h6>
+                                <h6 class="me-5 fixed-date1">08</h6>
+                                <h6 class="me-5 fixed-date1">15</h6>
+                                <h6 class="me-5 fixed-date1">22</h6>
+                                <h6 class="me-5 fixed-date1">29</h6>
+                            </div>
+                        </div>
+                        <div class="jan02" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">05</h6>
+                                <h6 class="me-5 fixed-date1">12</h6>
+                                <h6 class="me-5 fixed-date1">19</h6>
+                                <h6 class="me-5 fixed-date1">26</h6>
+                            </div>
+                        </div>
+                        <div class="feb02" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">02</h6>
+                                <h6 class="me-5 fixed-date1">09</h6>
+                                <h6 class="me-5 fixed-date1">16</h6>
+                                <h6 class="me-5 fixed-date1">23</h6>
+                            </div>
+                        </div>
+                        <div class="march02" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">01</h6>
+                                <h6 class="me-5 fixed-date1">08</h6>
+                                <h6 class="me-5 fixed-date1">15</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- dates from baroda -->
+        <div class="date-baroda" style="background: #f8f8f8; display: none;">
+            <div class="container">
+                <p class="mt-2" style="font-weight: 500;">Dates from Baroda</p>
+                <div class="btn-section">
+                    <button type="button" id="september03" class="btn text-light me-3"
+                        style="background: #de5824;">September</button>
+                    <button type="button" id="october03" class="btn btn-color  me-3">October</button>
+                    <button type="button" id="november03" class="btn btn-color  me-3">November</button>
+                    <button type="button" id="december03" class="btn btn-color  me-3">December</button>
+                    <button type="button" id="january03" class="btn btn-color  me-3">January</button>
+                    <button type="button" id="february03" class="btn btn-color  me-3">February</button>
+                    <button type="button" id="march03" class="btn btn-color  me-3">March</button>
+                </div>
+                <div class="mt-2 ms-2 py-6 container_PeBi9" style="background: #f8f8f8;">
+                    <div class="container">
+                        <div class="sep03">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">29</h6>
+                            </div>
+                        </div>
+                        <div class="oct03" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">06</h6>
+                                <h6 class="me-5 fixed-date1">13</h6>
+                                <h6 class="me-5 fixed-date1">20</h6>
+                                <h6 class="me-5 fixed-date1">27</h6>
+                            </div>
+                        </div>
+                        <div class="nov03" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">03</h6>
+                                <h6 class="me-5 fixed-date1">10</h6>
+                                <h6 class="me-5 fixed-date1">17</h6>
+                                <h6 class="me-5 fixed-date1">24</h6>
+                            </div>
+                        </div>
+                        <div class="dec03" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">01</h6>
+                                <h6 class="me-5 fixed-date1">08</h6>
+                                <h6 class="me-5 fixed-date1">15</h6>
+                                <h6 class="me-5 fixed-date1">22</h6>
+                                <h6 class="me-5 fixed-date1">29</h6>
+                            </div>
+                        </div>
+                        <div class="jan03" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">05</h6>
+                                <h6 class="me-5 fixed-date1">12</h6>
+                                <h6 class="me-5 fixed-date1">19</h6>
+                                <h6 class="me-5 fixed-date1">26</h6>
+                            </div>
+                        </div>
+                        <div class="feb03" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">02</h6>
+                                <h6 class="me-5 fixed-date1">09</h6>
+                                <h6 class="me-5 fixed-date1">16</h6>
+                                <h6 class="me-5 fixed-date1">23</h6>
+                            </div>
+                        </div>
+                        <div class="march03" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">01</h6>
+                                <h6 class="me-5 fixed-date1">08</h6>
+                                <h6 class="me-5 fixed-date1">15</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- dates from surat -->
+        <div class="date-surat" style="background: #f8f8f8; display: none;">
+            <div class="container">
+                <p class="mt-2" style="font-weight: 500;">Dates from Surat</p>
+                <div class="btn-section">
+                    <button type="button" id="september04" class="btn text-light me-3"
+                        style="background: #de5824;">September</button>
+                    <button type="button" id="october04" class="btn btn-color  me-3">October</button>
+                    <button type="button" id="november04" class="btn btn-color  me-3">November</button>
+                    <button type="button" id="december04" class="btn btn-color  me-3">December</button>
+                    <button type="button" id="january04" class="btn btn-color  me-3">January</button>
+                    <button type="button" id="february04" class="btn btn-color  me-3">February</button>
+                    <button type="button" id="march04" class="btn btn-color  me-3">March</button>
+                </div>
+                <div class="mt-2 ms-2 py-6 container_PeBi9" style="background: #f8f8f8;">
+                    <div class="container">
+                        <div class="sep04">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">29</h6>
+                            </div>
+                        </div>
+                        <div class="oct04" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">06</h6>
+                                <h6 class="me-5 fixed-date1">13</h6>
+                                <h6 class="me-5 fixed-date1">20</h6>
+                                <h6 class="me-5 fixed-date1">27</h6>
+                            </div>
+                        </div>
+                        <div class="nov04" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">03</h6>
+                                <h6 class="me-5 fixed-date1">10</h6>
+                                <h6 class="me-5 fixed-date1">17</h6>
+                                <h6 class="me-5 fixed-date1">24</h6>
+                            </div>
+                        </div>
+                        <div class="dec04" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">01</h6>
+                                <h6 class="me-5 fixed-date1">08</h6>
+                                <h6 class="me-5 fixed-date1">15</h6>
+                                <h6 class="me-5 fixed-date1">22</h6>
+                                <h6 class="me-5 fixed-date1">29</h6>
+                            </div>
+                        </div>
+                        <div class="jan04" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">05</h6>
+                                <h6 class="me-5 fixed-date1">12</h6>
+                                <h6 class="me-5 fixed-date1">19</h6>
+                                <h6 class="me-5 fixed-date1">26</h6>
+                            </div>
+                        </div>
+                        <div class="feb04" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">02</h6>
+                                <h6 class="me-5 fixed-date1">09</h6>
+                                <h6 class="me-5 fixed-date1">16</h6>
+                                <h6 class="me-5 fixed-date1">23</h6>
+                            </div>
+                        </div>
+                        <div class="march04" style="display: none;">
+                            <div class="mt-3 ms-0 d-flex ">
+                                <h6 class="me-5 fixed-date1">01</h6>
+                                <h6 class="me-5 fixed-date1">08</h6>
+                                <h6 class="me-5 fixed-date1">15</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- dates from rajkot -->
+        <div class="date-rajkot" style="background: #f8f8f8; display: none;">
+            <div class="container">
+                <p class="mt-2" style="font-weight: 500;">Dates from Rajkot</p>
+                <p class="text-secondary">Sorry! No dates for this trek is available right now. You can contact us for
+                    Special Group Camp.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- choice of month -->
+    <div class="schedule mt-3">
+        <div class="container">
+            <h4 style="color: #de5824;">Schedule</h4>
+            <div class="row ">
+                <div class="col-12 col-8">
+                    <div class="row choice-ahmedabad">
+                        <div class="col-12 col-8 ">
+                            <div class="d-flex day-section">
+
+                                <div class="line"></div>
+                                <div class="day-section1">
+                                    <!-- day0 -->
+                                    <div class="modal fade" id="day0" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="text-secondary">
+                                                        <h6>DAY 0 • SEP 21, 2023</h6>
+                                                        <h4 style="color: #de5824;">Depart from Ahmedabad</h4>
+                                                        <div>The journey starts! .</div>
+                                                        <div>
+                                                            <p>The camp will depart on the previous late night from
+                                                                Ahmedabad.</p>
+                                                            <p class="mt-2">i.e. if the camp start date in On Friday,
+                                                                then the camp will depart on Thursday late night at
+                                                                11:00 PM
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <div style="opacity: 0.8;">Reporting at Ahmedabad</div>
+                                                            <div>Departure from Ahmedabad: <span
+                                                                    style="color: #de5824;">Invincible NGO
+                                                                    Office,Navrangpura
+                                                                </span> |10:45PM
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                Reporting at CTM <span style="color: #de5824;">Express
+                                                                    Highway Garden</span>
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <p>Contact Details of the volunteers will be shared with
+                                                                    you one day prior to departure for any kind of
+                                                                    querries.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="d-example" data-bs-toggle="modal" href="#day0" role="button">
+                                        <div class="day d-flex">
+                                            <div class="dot-red"> • </div>
+                                            <div class="ms-3 day-1 text-secondary dot-text">DAY 0 • SEP 21, 2023</div>
+                                        </div>
+                                        <div class="ms-4 take-border">
+                                            <h4>Depart from Ahmedabad</h4>
+                                            <div class="text-secondary mb-3 journey">Gathering at Invincible NGO Office,
+                                                Ahmedabad <span class="know-more">Know more
+                                                    <i class="fa-solid fa-square-up-right"></i>
+                                                </span></div>
+                                        </div>
+                                    </a>
+                                    <!-- day01 -->
+                                    <div class="modal fade" id="day1" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="text-secondary">
+                                                        <h6>DAY 1 • SEP 22, 2023</h6>
+                                                        <h4 style="color: #de5824;">Arrival at Saputara & Activities
+                                                        </h4>
+                                                        <h6 style="color: #de5824;">09:00 AM | Visit Gira Waterfall &
+                                                            Depart for Saputara</h6>
+                                                        <div class="ms-2">
+                                                            <div>The bus will arrive at the Gira Waterfalls followed by
+                                                                a 10 min halt at a hotel for refreshment. After visiting
+                                                                the falls, the bus will take the participants to the
+                                                                basecamp.</div>
+                                                        </div>
+                                                        <div class="mt-2">
+                                                            <h6 style="color: #de5824;">11:30 AM | Arrival at Saputara
+                                                                Campsite & Setup a Tent</h6>
+                                                            <div class="mt-2">
+                                                                The first thing we will do is to set up camps. The
+                                                                instructors will lead all the participants to their
+                                                                allotted tents.
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-2">
+                                                            <h6 style="color: #de5824;">01:30 PM | Some Games/Activities
+                                                                and Lunch Break</h6>
+                                                            <p>Depending on the weather, we will perform some activities
+                                                                to introduce and familiarise every trekker with each
+                                                                other. After such a short icebreaking session, we will
+                                                                head for Lunch.
+                                                                Food is what Invincible is most praised for, and you
+                                                                will enjoy it surely.</p>
+                                                        </div>
+                                                        <div class="mt-2">
+                                                            <h6 style="color: #de5824;">05:30 PM | Trek to Sunset Point
+                                                            </h6>
+                                                            <p>We will walk towards some nearby places and acclimatize
+                                                                our bodies to this new weather.
+                                                                We will go to a place, which offers the best sunset
+                                                                view. If the monsoon clouds allow, that will be a nice
+                                                                closure of the day.</p>
+                                                        </div>
+                                                        <div class="mt-2">
+                                                            <h6 style="color: #de5824;">08:30 PM | Dinner</h6>
+                                                            <p>Do not miss any meals during this camp, as it is vital
+                                                                for a physical workout like trekking and
+                                                                acclimatization. Have a good sleep on this night, as you
+                                                                would have traveled so long.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="d-example" data-bs-toggle="modal" href="#day1" role="button">
+                                        <div class="day2">
+                                            <div class="day d-flex mt-3">
+                                                <div class="dot-red"> • </div>
+                                                <div class="ms-3 day-1 text-secondary dot-text">DAY 1 • SEP 22, 2023
+                                                </div>
+                                            </div>
+
+                                            <div class="ms-4 take-border">
+                                                <h4>Arrival at Saputara & Activities</h4>
+                                                <div class="text-secondary mb-3 journey">Journey & Trek to Sunset Point
+                                                    <span class="know-more">Know more
+                                                        <i class="fa-solid fa-square-up-right"></i>
+                                                    </span>
+                                                </div>
+                                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:600/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/package/8ce97085-6383-4f5a-944a-da9e0d38dbc6"
+                                                    class="mb-5 image" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- day 02  -->
+                                    <div class="modal fade" id="day3" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="text-secondary">
+                                                        <h6>DAY 2 • SEP 23, 2023</h6>
+                                                        <h4 style="color: #de5824;">Trekking</h4>
+                                                        <div>
+                                                            <h5 style="color: #de5824;">06:30 AM | Breakfast & Departure
+                                                                for the Trek
+                                                            </h5>
+                                                            <p>The day will start with an early morning breakfast. We
+                                                                will quickly have breakfast and depart for the trek as
+                                                                soon as possible.</p>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <h5 style="color: #de5824;">09:00 AM | Trek to Governor Hill
+                                                            </h5>
+                                                            <p class="pt-0">Trek to Governor Hill and visit Table Point.
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="color: #de5824;">08:00 PM | Musical Evening</h5>
+                                                            <p>Time for some Garba and dance, have fun with your trek
+                                                                mates.</p>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="color: #de5824;">09:00 PM | Dinner & Lights Off
+                                                            </h5>
+                                                            <p>The day would be a stretch for most of the trekkers. Have
+                                                                a proper sleep with a view to get ready for the next
+                                                                day’s schedule.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="d-example" data-bs-toggle="modal" href="#day3" role="button">
+                                        <div class="day3">
+                                            <div class="day d-flex mt-3">
+                                                <div class="dot-red"> • </div>
+                                                <div class="ms-3 day-1 text-secondary dot-text">DAY 2 • SEP 23, 2023
+                                                </div>
+                                            </div>
+
+                                            <div class="ms-4 take-border">
+                                                <h4>Trekking</h4>
+                                                <div class="text-secondary mb-3 journey">Feel the thrill of Dangs
+                                                    through explorers' eyes!
+                                                    <span class="know-more">Know more
+                                                        <i class="fa-solid fa-square-up-right"></i>
+                                                    </span>
+                                                </div>
+                                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:600/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/schedule/fb62047d-1c1e-4ade-b232-59215c96c7e6"
+                                                    class="mb-5 image" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- day03 -->
+                                    <div class="modal fade" id="day4" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="text-secondary">
+                                                        <h6>DAY 3 • SEP 24, 2023</h6>
+                                                        <h4 style="color: #de5824;">Sightseeing & Start Return Journey
+                                                        </h4>
+                                                        <div class="mt-2">
+                                                            <p class="mt-2">Saputara is a home for multiple beautiful
+                                                                gardens and they happen to be in full bloom in the
+                                                                monsoon and post-monsoon days.</p>
+                                                            <p class="mt-2">The day would start with a trek to the
+                                                                sunrise point and then we will explore gardens, museums,
+                                                                and lake areas. After spending time in the town, we will
+                                                                head to the campsite for lunch.</p>
+                                                            <p class="mt-2">After having lunch, we will start our return
+                                                                journey full of memories and photos. Sing and dance in
+                                                                the bus as much as you can and get ready for the routine
+                                                                life from the next day.</p>
+                                                            <p class="mt-2">The arrival time for different location
+                                                                would be as under approx,</p>
+                                                        </div>
+                                                        <div class="mt-2">
+                                                            <div><span style="opacity: 0.7;">Surat</span>: 06:00 PM
+                                                            </div>
+                                                            <div><span style="opacity: 0.7;">Baroda: </span>09:30 PM
+                                                            </div>
+                                                            <div><span style="opacity: 0.7;">Ahmedabad:</span>11:30 PM
+                                                            </div>
+                                                            <div><span style="opacity: 0.7;">Rajkot: </span>03:00 AM
+                                                                (Next
+                                                                Day)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="d-example" data-bs-toggle="modal" href="#day4" role="button">
+                                        <div class="day4">
+                                            <div class="day d-flex mt-3">
+                                                <div class="dot-red"> • </div>
+                                                <div class="ms-3 day-1 text-secondary dot-text">DAY 3 • SEP 24, 2023
+                                                </div>
+                                            </div>
+                                            <div class="ms-4  mb-3">
+                                                <h4>Sightseeing & Start Return Journey</h4>
+                                                <div class="text-secondary mb-3 journey ">Activities & Sightseeing in
+                                                    the first half of the day!
+                                                    <span class="know-more">Know more
+                                                        <i class="fa-solid fa-square-up-right"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="take-border pb-3">
+                                                    <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:600/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/schedule/31a5ddb8-6026-41d8-b424-d38071c76867"
+                                                        class="image" alt="" srcset="">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- attractions -->
+    <!-- stories start -->
+    <div style="background: #f8f8f8;">
+        <div class="container">
+            <div class="mt-3">
+                <h4 style="color: #de5824; font-size: 25px;">Attractions</h4>
+                <div class=" pt-3 ps-5 pe-5 pb-3 container_PeBi9 d-flex">
+                    <div class="stories">
+                        <a href="#" class="container_x text-body me-4">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:250/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/f99efdd8-d8b4-4d86-bd83-3736db2bef07"
+                                alt="" srcset="" />
+                        </a>
+                        <h6 class="mt-3 ms-2">Gira Waterfalls</h6>
+                    </div>
+                    <div class="stories">
+                        <a href="#" class="container_x text-body me-4">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:250/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/75537b3b-1309-4281-bad8-d48040508e2c"
+                                alt="" srcset="" />
+                        </a>
+                        <h6 class="mt-3 ms-2">Sunrise & Sunset Point</h6>
+                    </div>
+                    <div class="stories">
+                        <a href="#" class="container_x text-body me-4">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:250/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/84ec7d3b-ebc3-4f29-9441-450ca86eb41c"
+                                alt="" srcset="" />
+                        </a>
+                        <h6 class="mt-3 ms-2">Saputara Tribal Museum</h6>
+                    </div>
+                    <div class="stories">
+                        <a href="#" class="container_x text-body me-4">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:250/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/1a2bc7d1-83ca-4bd2-944a-88da5495819a"
+                                alt="" srcset="" />
+                        </a>
+                        <h6 class="mt-3 ms-2">Trekking in Sahyadri Hills</h6>
+                    </div>
+                    <div class="stories">
+                        <a href="#" class="container_x text-body me-4">
+                            <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:250/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/74e49c42-02ec-4814-abfc-53fc799cab67"
+                                alt="" srcset="" /></a>
+                        <h6 class=" mt-3">Saputara Lake</h6>
+                    </div>
+                    <div class="stories">
+                        <a href="#" class="container_x text-body me-4"><img
+                                src="https://img.invinciblengo.org/iconscout/f:jpeg/w:250/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/attraction/471d57d4-3767-4826-88ec-83d15ea32bf3"
+                                alt="" srcset="" /></a>
+                        <h6 class="mt-3 me-3">
+                            Saputara Ropeway
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- stories end -->
+
+    <!-- videos -->
+    <section class="experience mt-0">
+        <div class="container">
+            <div class="py-6 ">
+                <h4 class="events pt-4" style="color: #de5824; font-size: 25px;">Videos</h4>
+                <h5 class="text-secondary" style="color: #717171; font-size: 15px;">Exclusive footage from our camps
+                </h5>
+                <div class="m-n5 ps-5 pe-5 pt-3 pb-3 container_PeBi9 ">
+                    <div class="exp me-3">
+                        <iframe src="https://www.youtube.com/embed/6XfiXEmqWmc?si=AuX_5dDIUBRwwbMM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="exp me-3">
+                        <iframe src="https://www.youtube.com/embed/VwRtgK2a--w?si=8G-R2vsoOcSYXmeu"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="exp me-3">
+                        <iframe src="https://www.youtube.com/embed/APsxlfWC-M0?si=_hoOxuoRdBqurFwN"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="exp me-3">
+                        <iframe src="https://www.youtube.com/embed/KbXocuLcIMA?si=o2jina0gIWpH4X3D"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- videos -->
+
+    <!-- book now -->
+    <div
+        style="background: #f1f1f1; border-top: 2px solid #e3e3e3;border-bottom: 2px solid #e3e3e3;position: sticky; bottom: 0; ">
+        <div class="container  pt-3 pb-3 d-flex justify-content-between">
+            <div class="text-secondary">From 2,499 / person</div>
+            <div id="travel-booking">
+                <div class="modal fade" id="exampleModalToggle-x" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel">Select Package
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                <p>Join us from</p>
+                                <div class="btn-section d-flex">
+                                    <button type="button" class="btn text-light me-2"
+                                        style="background: #de5824;">Ahmedabad</button>
+                                    <button type="button" class="btn btn-color  me-2">Baroda</button>
+                                    <button type="button" class="btn btn-color  me-2">Surat</button>
+                                    <button type="button" class="btn btn-color  me-2">Matheran</button>
+                                    <button type="button" class="btn btn-color  me-2">Mumbai</button>
+                                </div>
+                                <div class="mt-3"
+                                    style="border-radius: 10px; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) ;">
+                                    <div class="d-flex">
+                                        <img class="py-2 ps-2 pe-2"
+                                            src="https://img.invinciblengo.org/iconscout/f:jpeg/w:64/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/package/7e6c62ce-9359-4686-99e9-c4c52015a368"
+                                            alt="" srcset="" height="80" width="80" style="border-radius: 20px;">
+                                        <div class="ms-3">
+                                            <h6 class="mt-3" style="color: #000;">Join from
+                                                Ahmedabad
+                                            </h6>
+                                            <div class="d-flex mt-3 text-secondary">
+                                                <p>₹5500 </p>
+                                                <p style="margin-left: 150px;">
+                                                    <span>
+                                                        <i class="fa-solid fa-calendar-days"></i> 3
+                                                        days
+                                                        / 2 nights
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle-x" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        </div>
+                    </div>
+                </div>
+                <a class="d-example00" data-bs-toggle="modal" href="#exampleModalToggle-x" role="button">
+                    <span class="text-center ">Book Now</span>
+                </a>
+            </div>
+            <!-- <a href="#">BOOK NOW</a> -->
+        </div>
+    </div>
+
+
+    <!-- img-gallary  & similar treks-->
+    <section class="experience  " style="background: #f8f8f8;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mt-5">
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Things to Carry</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>1.Shoes, sandals/chappal/sleepers, socks</div>
+                                    <div>2.Umbrella and raincoat, Plastic bags to carry wet clothes</div>
+                                    <div>3.5-6 pairs of clothes, mostly full sleeves & underwear</div>
+                                    <div>4.Water-bottle, some snacks or chocolates</div>
+                                    <div>5.Sanitary Items, talcum powder, facewash, sunscreen</div>
+                                    <div>6.Coffee mug, spoon & lunchbox (needed for the trek)</div>
+                                    <div>7.Camera/mobile phone, charger, powerbank</div>
+                                    <div>8.ID proof, ATM, cash</div>
+                                    <div>9.Torch</div>
+                                    <div>10.Screenshot of the payment receipt</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="d-example" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                        <p>Things to Carry <i class="fa-solid fa-arrow-right float-end"></i></p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-5">
+                    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Inclusion & Exclusion</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <p>Inclusion:</p>
+                                        <div class="text-secondary">
+                                            <div>- <span>Travelling by SL Train up to Mumbai</span></div>
+                                            <div>- <span>Road Transport from Mumbai to Matheran</span></div>
+                                            <div>- <span>Food (Breakfast + Lunch + Dinner)</span></div>
+                                            <div>- <span>Stay</span></div>
+                                            <div>- <span>Trekking & Sightseeing</span></div>
+                                            <div>- <span>Volunteers & Instructors</span></div>
+                                            <div>- <span>First Aid Support</span></div>
+                                            <div>- <span>5% GST</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <p>Exclusion:</p>
+                                        <div class="text-secondary">
+                                            <div>- <span>Food during travel duration</span></div>
+                                            <div>- <span>Last day Lunch & Dinner</span></div>
+                                            <div>- <span>Any kind of Sightseeing or Entry Fees</span></div>
+                                            <p>- <span>Anything not listed above</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="d-example" data-bs-toggle="modal" href="#exampleModalToggle1" role="button">
+                        <p>Inclusion & Exclusion<i class="fa-solid fa-arrow-right float-end"></i></p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-5">
+                    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Cancellation Policy</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-secondary">
+                                    <div>
+                                        Cancellation would be granted by the Senior Registration Manager or Higher
+                                        Authorities on receiving cancellation requests through the website. The
+                                        cancellation
+                                        amount will be counted on total camp fees only.
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <h4 class="mb-2">Cancellation Amount will be as per under</h4>
+                                            <div>(the percentage shows the amount on total camp fees)</div>
+                                            <div>- <span>Before more than 15 days of Departure, 10%</span></div>
+                                            <div>- <span>Before 2 to 15 days of Departure, 50%</span></div>
+                                            <div>- <span>In the last 48 hours of Departure & After departure,
+                                                    90%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h4>How to cancel your booking for any Camp/Event</h4>
+                                        <div>
+                                            <div>1.Login to our Website & then go to your Dashboard</div>
+                                            <div>2.Find your upcoming camp for which you are
+                                                cancelling</div>
+                                            <div>3.Click on Cancellation Request & fill the form</div>
+                                            <div>4.Mention your reason for cancelling your Camp</div>
+                                            <div>5.Submit Your Cancellation Request</div>
+                                            <div>6.Cancellation Team will be call you regarding your
+                                                cancellation within 48 working hours</div>
+                                            <div>7.After Canceled your Booking, you will get your refund
+                                                by
+                                                account
+                                                in 7 to 12 working days</div>
+                                        </div>
+                                        <div class="mb-3">In case of refund, transcation charges are not refundable
+                                            by
+                                            banks/payment
+                                            gateways.</div>
+                                        <div class="mb-3">
+                                            <h4 class="mb-3">Reschedule of the Camp/Event:</h4>
+                                            <p>In case of any Emergency Reason situation, we are offering an option
+                                                of
+                                            <div>
+                                                <div>- Rescheduling is possible only before 5 days of the camp
+                                                    departure, In
+                                                    the
+                                                    last 5 days of departure rescheduling is not provided</div>
+                                                <div>- For this, you have to submit valid proof for the same
+                                                    including a
+                                                    Call
+                                                    letter from the University & College ID Proof in case of exams
+                                                    and
+                                                    Medical
+                                                    Certificate with all the respective reports from the Hospitals
+                                                    (Signed
+                                                    by
+                                                    MBBS post or higher authorities) in case of medical emergencies
+                                                </div>
+                                                <div>- Excluding this above mentioned reasons, rescheduling option
+                                                    is
+                                                    not
+                                                    available</div>
+                                                <div>- Also participants will have to pay the cancellation charges
+                                                    for
+                                                    travel/accommodation arrangements.</div>
+                                                <div>- This option is given only to those who have valid proof
+                                                    available,
+                                                    other
+                                                    participants have to continue their Camp as per schedule.</div>
+                                                <div>- The rescheduling options are offered only to those who would
+                                                    be
+                                                    facing
+                                                    the emergency other friends or colleagues of that camp have to
+                                                    continue
+                                                    as
+                                                    per their schedule.</div>
+                                                <div>- Rescheduling is given only 1 time, for the Second time
+                                                    Rescheduling &
+                                                    Cancellation option is not available</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="d-example" data-bs-toggle="modal" href="#exampleModalToggle3" role="button">
+                        <p>Cancellation Policy<i class="fa-solid fa-arrow-right float-end"></i></p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-5">
+                    <div class="modal fade" id="exampleModalToggle4" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Terms & Conditions</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-secondary">
+                                    <div>
+                                        <div><strong>Discipline</strong></div>
+                                        <div>✓ This is an Adventure Camp and not a leisure tour, so we expect a high
+                                            level of discipline</div>
+                                        <div>✓ Participants will have to follow the instructions clearly given by the
+                                            volunteer/guide, Misbehave/Arguing with the volunteers/guide/instructors
+                                            will be considered as disciplinary issues</div>
+                                        <div>✓ Smoking, Alcohol, Tobacco & Abusive Language are strictly prohibited and
+                                            if anyone found a suspect in such cases, the participation will be
+                                            terminated and no further service/return traveling/refund will be offered
+                                            then after</div>
+                                        <div>✓ Accommodation & Sanitary Facilities for Girls & Boys are separate</div>
+                                        <div>✓ Punctuality is taken as a serious matter</div>
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <div><strong>Change Of Schedule</strong></div>
+                                        <div>✓ In case of unforeseen conditions, the schedule/itinerary or the
+                                            accommodation style can be modified/canceled</div>
+                                        <div>✓ Invincible reserves all rights to cancel/shorten/modify the itinerary,
+                                            and the final decision is authorized with the trustee team</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="d-example" data-bs-toggle="modal" href="#exampleModalToggle4" role="button">
+                        <p>Terms & Conditions<i class="fa-solid fa-arrow-right float-end"></i></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <h2 class="pt-3 ps-1" style="color: #de5824; font-size: 23px; font-weight: 400;">
+                    Similar Treks
+                </h2>
+                <div class="m-n5 ps-5 pe-5 pt-3 pb-3 container_PeBi9 ">
+                    <div class="event-image me-3" style="background-color: #fff;">
+                        <a href="#" class="mt-0">
+                            <div class="card-section1 ">
+                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/7e4a9f2c-2ad0-48c4-b99c-33529816d90e"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body ps-3 pe-2">
+                                    <h5>Polo Forest One Day Trek</h5>
+                                    <p class="text-secondary">From ₹450/-- <span><i
+                                                class="fa-solid fa-calendar-days"></i></span> 1 day
+                                        / 0 night</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event-image me-3" style="background-color: #fff;">
+                        <a href="#" class="mt-0">
+                            <div class="card-section1 ">
+                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/044b3ff6-8678-469c-87f1-f249048fab6f"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body ps-3 pe-2">
+                                    <h5>Bakor Nature Camp</h5>
+                                    <p class="text-secondary">From ₹1,499/-- <span><i
+                                                class="fa-solid fa-calendar-days"></i></span> 2 days
+                                        / 1 night</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event-image me-3" style="background-color: #fff;">
+                        <a href="#" class="mt-0">
+                            <div class="card-section1 ">
+                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/61c77b9b-b069-4a2e-929e-ba72216b6aaa"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body ps-3 pe-2">
+                                    <h5>Bakor One Day Camp</h5>
+                                    <p class="text-secondary">From ₹499/-- <span><i
+                                                class="fa-solid fa-calendar-days"></i></span> 1 day
+                                        / 0 nights</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event-image me-3" style="background-color: #fff;">
+                        <a href="#" class="mt-0">
+                            <div class="card-section1 ">
+                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/b015769f-dea3-4e19-8705-1dc8bd72c147"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body ps-3 pe-2">
+                                    <h5>Polo Forest Trekking Camp</h5>
+                                    <p class="text-secondary">From ₹1,399/-- <span><i
+                                                class="fa-solid fa-calendar-days"></i></span> 2 days
+                                        / 1 night</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event-image me-3" style="background-color: #fff;">
+                        <a href="#" class="mt-0">
+                            <div class="card-section1 ">
+                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/a685bc53-aac7-415f-999d-8540b61d85fd"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body ps-3 pe-2">
+                                    <h5>Magical Maharashtra</h5>
+                                    <p class="text-secondary">From ₹3,599/-- <span><i
+                                                class="fa-solid fa-calendar-days"></i></span> 3 days
+                                        / 2 night</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event-image me-3" style="background-color: #fff;">
+                        <a href="#" class="mt-0">
+                            <div class="card-section1 ">
+                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/3744df65-c3f2-4f7c-b75f-095e77eb59f8"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body ps-3 pe-2">
+                                    <h5>Saputara Adventure Camp</h5>
+                                    <p class="text-secondary">From ₹2,499/--<span><i
+                                                class="fa-solid fa-calendar-days"></i></span> 3 days
+                                        / 2 night</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event-image me-3" style="background-color: #fff;">
+                        <a href="#" class="mt-0">
+                            <div class="card-section1 ">
+                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/7bb9fc53-e89c-4978-9520-c7faca32edae"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body ps-3 pe-2">
+                                    <h5>Jaisalmer Desert Camping</h5>
+                                    <p class="text-secondary">From 4,999 /--<span><i
+                                                class="fa-solid fa-calendar-days"></i></span> 4 days
+                                        / 3 nights</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event-image me-3" style="background-color: #fff;">
+                        <a href="#" class="mt-0">
+                            <div class="card-section1 ">
+                                <img src="https://img.invinciblengo.org/iconscout/f:jpeg/w:1400/h:0/rt:fit/plain/https://invincible.s3.wasabisys.com/trek/03c0bce7-1701-4803-9c48-6be97927d498"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body ps-3 pe-2">
+                                    <h5>Discover The Dangs</h5>
+                                    <p class="text-secondary">From ₹2,499/--<span><i
+                                                class="fa-solid fa-calendar-days"></i></span> 3 days
+                                        / 2 nights</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer class="footer mt-0">
+        <div class="container">
+            <div class="row  ">
+                <div class="col-12 col-md-6 col-lg-4 py-3">
+                    <img src="https://invinciblengo.org/_nuxt/img/59fac0f.svg" alt="" srcset="" height="150"
+                        width="150px">
+                    <p class="footer-text pt-0 s-text" style="font-size: 14px; opacity: 0.6;">
+                        Invincible is a Non Government Organization, being run by young
+                        students for social reformation and building the nation with moral
+                        values and ethics.
+                    </p>
+                    <ul class="list-inline font-icon mb-0">
+                        <li class="list-inline-item icon">
+                            <a class="btn btn-outline-light btn-floating " href="#!" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-outline-light btn-floating " href="#!" role="button"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-outline-light btn-floating " href="#!" role="button"><i
+                                    class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-outline-light btn-floating " href="#!" role="button"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-outline-light btn-floating " href="#!" role="button"><i
+                                    class="fa-solid fa-location-dot"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4  py-3 d-none d-lg-block">
+                    <h6 style="color: #de5824;">Quick Links</h6>
+                    <ul class="list-unstyled mb-0 list">
+                        <li><a href="#" class="">Events</a></li>
+                        <li><a href="#" class="">Downloads</a></li>
+                        <li><a href="#" class="">Login</a></li>
+                        <li><a href="#" target="_blank">Stories</a></li>
+                        <li><a href="#" class="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 py-3">
+                    <div>
+                        <h6 class="text-uppercase mb-2" style="color: #de5824;">Contact</h6>
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <h6 class="mb-2">Ahmedabad (Head Office)</h6>
+                                <p class="font-size-sm o60 s-text" style="opacity: 0.6;">
+                                    308, University Plaza, Above Chocolate Room, <br>
+                                    Vijay Cross Roads, Navrangpura,<br>
+                                    Ahmedabad, Gujarat 380009
+                                </p>
+                                <p class="font-size-sm o60 s-text" style="opacity: 0.6;">
+                                    Office Timings: 11AM to 8PM
+                                </p>
+                                <a href="#" class="d-block mb-1 office-no s-text">
+                                    <i class="fa-solid fa-phone"></i>
+                                    +91
+                                    9099
+                                    400 699</a>
+                                <a href="#" class="d-block mb-4 office-no s-text">
+                                    <i class="fa-solid fa-phone"></i> +91
+                                    9913 800 699</a>
+                                <div class="">
+                                    <h6 class="branches"><a href="#" class="">
+                                            Contact for Rajkot, Baroda, Surat Office
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0RFNTgyNCIgZD0iTTE3LjkyLDYuNjJhMSwxLDAsMCwwLS41NC0uNTRBMSwxLDAsMCwwLDE3LDZIN0ExLDEsMCwwLDAsNyw4aDcuNTlsLTguMyw4LjI5YTEsMSwwLDAsMCwwLDEuNDIsMSwxLDAsMCwwLDEuNDIsMEwxNiw5LjQxVjE3YTEsMSwwLDAsMCwyLDBWN0ExLDEsMCwwLDAsMTcuOTIsNi42MloiLz48L3N2Zz4="
+                                                alt="right arrow" height="20px" width="20px"></a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Copyright  bottom-end">
+                <div class="container border-top border-light pt-3 pb-2"> &copy; 2013-2022 Invincible.
+                    •<a href="#">Privacy
+                        Policy</a> •<a href="#">Terms and Condition</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- bundel file-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+<script>
+
+    // for video play
+    const videoPlayer = document.querySelector("#player");
+    const videoContainer = document.querySelector(".img_container");
+    videoContainer.addEventListener("click", () => {
+        videoPlayer.classList.toggle("visibleDiv");
+    });
+
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
+</html>
