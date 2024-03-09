@@ -1,0 +1,370 @@
+{
+  "user": [
+    {
+      "id": "1709907257129",
+      "name": "Shreya",
+      "email": "shreya123@gmail.com",
+      "password": "12345",
+      "mobile": "1234567890",
+      "img": "https://images.unsplash.com/photo-1491349174775-aaafddd81942?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+      "status": "Unblock"
+    },
+    {
+      "id": "1709910205114",
+      "name": "Reeva",
+      "email": "reeva123@gmail.com",
+      "password": "12345",
+      "mobile": "1234567890",
+      "img": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
+      "status": "Unblock"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1709907257129",
+      "email": "shreyansh123@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "services": [
+    {
+      "id": "1708497068937",
+      "catg_id": "1708495438622",
+      "name": "",
+      "desc": "",
+      "price": "999",
+      "service_img": "http://localhost:3001/website/img/about.jpg",
+      "status": "Available",
+      "service_name": "Chocolate Cake",
+      "service_desc": "Chocolate Cake"
+    },
+    {
+      "id": "1709868516073",
+      "catg_id": "1708495438622",
+      "name": "",
+      "desc": "",
+      "price": "599",
+      "service_img": "https://www.fnp.com/images/pr/l/v20221118132140/chocolate-cream-cake-half-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Chocolate Cake",
+      "service_desc": "Chocolate Cream Cake Half Kg"
+    },
+    {
+      "id": "1709868648995",
+      "catg_id": "1708495438622",
+      "name": "",
+      "desc": "",
+      "price": "575",
+      "service_img": "https://www.fnp.com/images/pr/l/v20221214145651/chocolate-walnut-truffle-half-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Chocolate Cake",
+      "service_desc": "Chocolate Walnut Truffle Cake- Half kg"
+    },
+    {
+      "id": "1709868817597",
+      "catg_id": "1708495438622",
+      "name": "",
+      "desc": "",
+      "price": "724",
+      "service_img": "https://www.fnp.com/images/pr/l/v20211115155244/delicious-heart-shaped-chocolate-cake-half-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Chocolate Cake",
+      "service_desc": "Delicious Heart Shaped Chocolate Cake- Half Kg"
+    },
+    {
+      "id": "1709868946329",
+      "catg_id": "1708495438622",
+      "name": "",
+      "desc": "",
+      "price": "675",
+      "service_img": "https://www.fnp.com/images/pr/l/v20201019103013/death-by-chocolate-cake-half-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Chocolate Cake",
+      "service_desc": "Death By Chocolate Cake Half Kg"
+    },
+    {
+      "id": "1709869078204",
+      "catg_id": "1708495510676",
+      "name": "",
+      "desc": "",
+      "price": "699",
+      "service_img": "https://www.fnp.com/images/pr/l/v20190702132219/special-delicious-vanilla-cake-half-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Vanilla Cake",
+      "service_desc": "Special Delicious Vanilla Cake Half kg"
+    },
+    {
+      "id": "1709869142543",
+      "catg_id": "1708495510676",
+      "name": "",
+      "desc": "",
+      "price": "724",
+      "service_img": "https://www.fnp.com/images/pr/l/v20221205145931/floral-vanilla-cream-cake-half-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Vanilla Cake",
+      "service_desc": "Floral Vanilla Cream Cake Half Kg"
+    },
+    {
+      "id": "1709869243928",
+      "catg_id": "1708495510676",
+      "name": "",
+      "desc": "",
+      "price": "750",
+      "service_img": "https://www.fnp.com/images/pr/l/v20221130121944/vanilla-cake-with-gulab-jamun-half-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Vanilla Cake",
+      "service_desc": "Vanilla Cake With Gulab Jamun Half kg"
+    },
+    {
+      "id": "1709869368737",
+      "catg_id": "1708495588736",
+      "name": "",
+      "desc": "",
+      "price": "695",
+      "service_img": "https://www.fnp.com/images/pr/l/v20221205145901/creamy-red-velvet-cake-half-kg-eggless_1.jpg",
+      "status": "Available",
+      "service_name": "Red Velvet Cake",
+      "service_desc": "Creamy Red Velvet Cake Half Kg Eggless"
+    },
+    {
+      "id": "1709869451178",
+      "catg_id": "1708495588736",
+      "name": "",
+      "desc": "",
+      "price": "573",
+      "service_img": "https://www.fnp.com/images/pr/l/v20210630205542/red-velvet-heart-cake-half-kg-eggless_1.jpg",
+      "status": "Available",
+      "service_name": "Red Velvet Cake",
+      "service_desc": "Red Velvet Heart Cake Half Kg Eggless"
+    },
+    {
+      "id": "1709869664918",
+      "catg_id": "1709652057600",
+      "name": "",
+      "desc": "",
+      "price": "599",
+      "service_img": "https://images.unsplash.com/photo-1618426703623-c1b335803e07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnJvdCUyMGNha2V8ZW58MHx8MHx8fDA%3D",
+      "status": "Available",
+      "service_name": "Carrot Cake",
+      "service_desc": "Carrot Cake Half Kg"
+    },
+    {
+      "id": "1709869791315",
+      "catg_id": "1709652082417",
+      "name": "",
+      "desc": "",
+      "price": "499",
+      "service_img": "https://media.istockphoto.com/id/179640507/photo/strawberry-cheesecake.jpg?s=612x612&w=0&k=20&c=VKRS8I0OgwWseIXTOP_2_DwRBKgHVHyaAtQl2rDCxeY=",
+      "status": "Available",
+      "service_name": "Cheese Cake",
+      "service_desc": "Cheese Cake Half Kg"
+    },
+    {
+      "id": "1709869867758",
+      "catg_id": "1709652082417",
+      "name": "",
+      "desc": "",
+      "price": "473",
+      "service_img": "https://media.istockphoto.com/id/1405852592/photo/blueberry-cheesecake.jpg?s=612x612&w=0&k=20&c=G554WUVYRwAmBuDQZ0CzQcOp6o_na0x_ga--5Y5_OVc=",
+      "status": "Available",
+      "service_name": "Cheese Cake",
+      "service_desc": "Cheese Cake Half kg"
+    },
+    {
+      "id": "1709870054748",
+      "catg_id": "1709818887957",
+      "name": "",
+      "desc": "",
+      "price": "583",
+      "service_img": "https://media.istockphoto.com/id/1894455551/photo/chocolate-sponge-cake-cut-on-white-plate.jpg?s=612x612&w=0&k=20&c=Bn0iAIGnW5yyOedjdOSGjPp8Ys0U1mwILCo3kRPJNA0=",
+      "status": "Available",
+      "service_name": "Sponge Cake",
+      "service_desc": "Super Sponge Cake Half kg"
+    },
+    {
+      "id": "1709870638230",
+      "catg_id": "1709819001609",
+      "name": "",
+      "desc": "",
+      "price": "825",
+      "service_img": "https://www.fnp.com/images/pr/l/v20180518094011/chocolate-fruit-gateau-half-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Fruit Cake",
+      "service_desc": "Chocolate Fruit Gateau Cake- Half kg"
+    },
+    {
+      "id": "1709870712045",
+      "catg_id": "1709819001609",
+      "name": "",
+      "desc": "",
+      "price": "724",
+      "service_img": "https://www.fnp.com/images/pr/l/v20190524100626/heart-shaped-vanilla-fruit-cake-half-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Fruit Cake",
+      "service_desc": "Heart Shaped Vanilla Fruit Cake- Half Kg"
+    },
+    {
+      "id": "1709870832609",
+      "catg_id": "1709819093920",
+      "name": "",
+      "desc": "",
+      "price": "877",
+      "service_img": "https://www.fnp.com/images/pr/l/v20201019160418/rich-coffee-cream-cake-2-kg_1.jpg",
+      "status": "Available",
+      "service_name": "Coffee Cake",
+      "service_desc": "Rich Coffee Cream Cake Half Kg"
+    },
+    {
+      "id": "1709871124626",
+      "catg_id": "1709819177313",
+      "name": "",
+      "desc": "",
+      "price": "599",
+      "service_img": "https://media.istockphoto.com/id/1093301370/photo/coconut-chocolate-cake.jpg?s=612x612&w=0&k=20&c=ZzXvgwLho2Iei5-cRzIlKrlIUr7kJ1nZkf_gEph2HZA=",
+      "status": "Available",
+      "service_name": "Coconut Cake",
+      "service_desc": "Coconut Cake Half Kg"
+    },
+    {
+      "id": "1709871259488",
+      "catg_id": "1709819262541",
+      "name": "",
+      "desc": "",
+      "price": "749",
+      "service_img": "https://media.istockphoto.com/id/1436367629/photo/close-up-image-of-bakery-display-of-desserts-sliced-coffee-and-marbled-chocolate-cake-on.jpg?s=612x612&w=0&k=20&c=qdMyly8G12TZUA0pOrFgr8sJkA6uUDQyJ8csx0jmcE4=",
+      "status": "Available",
+      "service_name": "Marble Cake",
+      "service_desc": "Marble Chocolate Cake Half kg"
+    },
+    {
+      "id": "1709871460379",
+      "catg_id": "1709819262541",
+      "name": "",
+      "desc": "",
+      "price": "897",
+      "service_img": "https://media.istockphoto.com/id/1708321692/photo/marble-cake-include-chocolate-cream-sugar-with-knife-served-on-board-top-view-of-cafe-food.jpg?s=612x612&w=0&k=20&c=s7up8IZ74SSWZusmiKtl8g7cHKt6V0unRnutUhBImNU=",
+      "status": "Available",
+      "service_name": "Marble Cake",
+      "service_desc": "Marble cake including chocolate cream with 1 kg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1708495438622",
+      "catg_name": "Chocolate Cake",
+      "catg_img": "https://media.istockphoto.com/id/1312968249/photo/contemporary-chocolate-truffle-layer-cake.webp?b=1&s=170667a&w=0&k=20&c=H-I_IvdhZsPUCgHL9vwFcwKq6xgUvzLkd69S5wIEFOM="
+    },
+    {
+      "id": "1708495510676",
+      "catg_name": "Vanilla Cake",
+      "catg_img": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VmFuaWxsYSUyMENha2V8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      "id": "1708495588736",
+      "catg_name": "Red Velvet Cake",
+      "catg_img": "https://media.istockphoto.com/id/1439781931/photo/full-frame-image-of-whole-red-velvet-cake-on-cake-stand-for-valentines-day-dehydrated.webp?b=1&s=170667a&w=0&k=20&c=ATRASwnLW5u3voR9LTpuoK5_RSa-I03Squ7Sho3Hc5A="
+    },
+    {
+      "id": "1709652057600",
+      "catg_name": "Carrot Cake",
+      "catg_img": "https://images.unsplash.com/photo-1595080622896-844ff207e639?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Q2Fycm90JTIwQ2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": "1709652082417",
+      "catg_name": "Cheesecake",
+      "catg_img": "https://images.unsplash.com/photo-1578775887804-699de7086ff9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2hlZXNlY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": "1709818887957",
+      "catg_name": "Sponge Cake",
+      "catg_img": "https://media.istockphoto.com/id/1042314828/photo/red-velvet-sponge-swiss-roll-with-fresh-raspberry-on-dark-background.jpg?s=612x612&w=0&k=20&c=zsu8rIfstUFvbvIJ0eUZRnPZ6hZkpByrMtfWya_sisg="
+    },
+    {
+      "id": "1709819001609",
+      "catg_name": "Fruit cake",
+      "catg_img": "https://images.unsplash.com/photo-1609357871098-7949aa2fb20d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZydWl0JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": "1709819093920",
+      "catg_name": "Coffee Cake",
+      "catg_img": "https://images.unsplash.com/photo-1572897305554-9b38c937edba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fENvZmZlZSUyMENha2V8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      "id": "1709819177313",
+      "catg_name": "Coconut Cake",
+      "catg_img": "https://media.istockphoto.com/id/1079254210/photo/coconut-cream-pie.webp?b=1&s=170667a&w=0&k=20&c=APjCQEYeRpNVLWUWVm0rq1RTPhrkf8iDhNUoux2ECjg="
+    },
+    {
+      "id": "1709819262541",
+      "catg_name": "Marble Cake",
+      "catg_img": "https://media.istockphoto.com/id/1910074626/photo/vanilla-chocolate-swirl-bread-it-is-a-delicious-bakery-style-bread-made-with-dough-of-vanilla.webp?b=1&s=170667a&w=0&k=20&c=ZJmCzBI3qIv_Jx-qFjAehQc54kDIF6QXqHPoN1Ivt2o="
+    }
+  ],
+  "employee": [
+    {
+      "id": "1",
+      "name": "Employee1",
+      "email": " abc123@gamil.com ",
+      "password": "12345",
+      "mobile": "1234567890",
+      "img": "https://t3.ftcdn.net/jpg/01/65/63/94/240_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg",
+      "status": "Unblock"
+    },
+    {
+      "id": "2",
+      "name": "Employee2",
+      "email": " abc123@gamil.com ",
+      "password": "23451",
+      "mobile": "1234567890",
+      "img": "https://t3.ftcdn.net/jpg/01/65/63/94/240_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg",
+      "status": "Unblock"
+    },
+    {
+      "id": "3",
+      "name": "Employee3",
+      "email": " abc123@gamil.com ",
+      "password": "34512",
+      "mobile": "1234567890",
+      "img": "https://t3.ftcdn.net/jpg/01/65/63/94/240_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg",
+      "status": "Unblock"
+    },
+    {
+      "id": "4",
+      "name": "Employee4",
+      "email": " abc123@gamil.com ",
+      "password": "45123",
+      "mobile": "1234567890",
+      "img": "https://t3.ftcdn.net/jpg/01/65/63/94/240_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg",
+      "status": "Unblock"
+    },
+    {
+      "id": "1709652106313",
+      "name": "z",
+      "email": "df@gmail.com",
+      "password": "12345",
+      "mobile": "2222326466",
+      "img": "https://t3.ftcdn.net/jpg/01/65/63/94/240_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg"
+    }
+  ],
+  "contact": [
+    {
+      "id": "1708498558716",
+      "name": "zoya",
+      "email": "zoya@gmail.com",
+      "subject": "Product sample",
+      "comment": "It is good product",
+      "status": "Avilable",
+      "catg_name": "",
+      "catg_img": ""
+    }
+  ],
+  "feedback": [
+    {
+      "id": "1",
+      "name": "person1",
+      "email": "abc123@gmail.com",
+      "comment": "good services",
+      "status": "Unblock"
+    }
+  ]
+}

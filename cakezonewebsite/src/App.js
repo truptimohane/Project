@@ -1,0 +1,250 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import Home from "./website/Pages/Home";
+import About from "./website/Pages/About";
+import Menu from "./website/Pages/Menu";
+import Team from "./website/Pages/Team";
+import Service from "./website/Pages/Service";
+import Testimonial from "./website/Pages/Testimonial";
+import Contact from "./website/Pages/Contact";
+import Feedback from "./website/Pages/Feedback";
+import Login from "./website/Pages/Login";
+import Profile from "./website/Pages/Profile";
+import Signup from "./website/Pages/Signup";
+import PNF from "./website/Pages/PNF";
+
+// Adminside
+import Dashboard from "./Admin/Pages/Dashboard";
+import AdminHeader from "./Admin/component/AdminHeader";
+import AdminFooter from "./Admin/component/AdminFooter";
+import Add_categories from "./Admin/Pages/Add_categories";
+import Manage_categories from "./Admin/Pages/Manage_categories";
+import Add_services from "./Admin/Pages/Add_services";
+import Manage_services from "./Admin/Pages/Manage_services";
+import Manage_user from "./Admin/Pages/Manage_user";
+// import Manage_Feedback from "./Admin/Pages/Manage_Feedback";
+import Add_emp from "./Admin/Pages/Add_emp";
+import Manage_emp from "./Admin/Pages/Manage_emp";
+import Manage_contact from "./Admin/Pages/Manage_contact";
+import View_services from "./website/Pages/View_services";
+import Admin_login from "./Admin/Pages/Admin_login";
+
+function App() {
+  return (
+    <div>
+      <BrowserRouter>
+        <ToastContainer></ToastContainer>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/about"
+            element={
+              <>
+                <About />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/menu"
+            element={
+              <>
+                <Menu />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/team"
+            element={
+              <>
+                <Team />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/service"
+            element={
+              <>
+                <Service />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/testimonial"
+            element={
+              <>
+                <Testimonial />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/contact"
+            element={
+              <>
+                <Contact />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/feedback"
+            element={
+              <>
+                <Feedback />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/login"
+            element={
+              <>
+                <Login />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/signup"
+            element={
+              <>
+                <Signup />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/profile"
+            element={
+              <>
+                <Profile />
+              </>
+            }
+          ></Route>
+          <Route
+            path="*"
+            element={
+              <>
+                <PNF />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/view_service/:cate_id"
+            element={
+              <>
+                <View_services />
+              </>
+            }
+          ></Route>
+
+          {/* admin */}
+          <Route
+            path="/admin-login"
+            element={
+              <>
+                <Admin_login />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/admin-dashboard"
+            element={
+              <>
+                <Dashboard />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/add-categories"
+            element={
+              <>
+                <AdminHeader />
+                <Add_categories />
+                <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/manage-categories"
+            element={
+              <>
+                {" "}
+                <AdminHeader /> <Manage_categories /> <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/add-employee"
+            element={
+              <>
+                {" "}
+                <AdminHeader /> <Add_emp /> <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/manage-employee"
+            element={
+              <>
+                {" "}
+                <AdminHeader /> <Manage_emp /> <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/add-products"
+            element={
+              <>
+                {" "}
+                <AdminHeader /> <Add_services /> <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/manage-products"
+            element={
+              <>
+                {" "}
+                <AdminHeader /> <Manage_services /> <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/manage-user"
+            element={
+              <>
+                {" "}
+                <AdminHeader /> <Manage_user /> <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/manage-contact"
+            element={
+              <>
+                <AdminHeader /> <Manage_contact /> <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/manage_feedback"
+            element={
+              <>
+                <AdminHeader />
+                {/* <Manage_Feedback /> */}
+                <AdminFooter />
+              </>
+            }
+          ></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;
