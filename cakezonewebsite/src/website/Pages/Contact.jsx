@@ -1,8 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../component/Header";
 import Footer2 from "../component/Footer2";
+import axios from "axios";
 
 function Contact() {
+  const [formvalue, setFormvalue] = useState({
+    id: "",
+    name: "",
+    email: "",
+    subject: "",
+    comment: "",
+    status: "",
+    catg_name: "",
+    catg_img: "",
+  });
+
+  const getform = (e) => {
+    setFormvalue({
+      ...formvalue,
+      id: new Date().getTime().toString(),
+      [e.target.name]: e.target.value,
+    });
+    console.log(formvalue);
+  };
+
+  const submithandel = async (e) => {
+    e.preventDefault(); // stop page reload
+    const res = await axios.post(`http://localhost:3000/contact`, formvalue);
+    console.log(res);
+    if (res.status == 201) {
+      setFormvalue({
+        ...formvalue,
+        id: "",
+        name: "",
+        email: "",
+        subject: "",
+        comment: "",
+        status: "",
+        catg_name: "",
+        catg_img: "",
+      });
+      alert("Contact's details submited success");
+      return false;
+    }
+  };
+
   return (
     <div>
       <Header />
@@ -49,19 +91,29 @@ function Contact() {
           </div>
           <div className="row justify-content-center">
             <div className="col-lg-6">
-              <form>
+              <form role="form" action="" method="post" onSubmit={submithandel}>
                 <div className="row g-3">
                   <div className="col-sm-6">
                     <input
                       type="text"
                       className="form-control bg-light border-0 px-4"
                       placeholder="Your Name"
+                      id="name"
+                      name="name"
                       style={{ height: 55 }}
+                      value={formvalue.name}
+                      onChange={getform}
+                      required
                     />
                   </div>
                   <div className="col-sm-6">
                     <input
+                      id="email"
+                      name="email"
                       type="email"
+                      value={formvalue.email}
+                      onChange={getform}
+                      required
                       className="form-control bg-light border-0 px-4"
                       placeholder="Your Email"
                       style={{ height: 55 }}
@@ -72,7 +124,12 @@ function Contact() {
                       type="text"
                       className="form-control bg-light border-0 px-4"
                       placeholder="Subject"
+                      id="subject"
+                      name="subject"
                       style={{ height: 55 }}
+                      value={formvalue.subject}
+                      onChange={getform}
+                      required
                     />
                   </div>
                   <div className="col-sm-12">
@@ -81,6 +138,11 @@ function Contact() {
                       rows={4}
                       placeholder="Message"
                       defaultValue={""}
+                      id="comment"
+                      name="comment"
+                      value={formvalue.comment}
+                      onChange={getform}
+                      required
                     />
                   </div>
                   <div className="col-sm-12">

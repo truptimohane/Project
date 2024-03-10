@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 
 function Manage_contact() {
   const [data, setData] = useState([]);
@@ -21,11 +22,35 @@ function Manage_contact() {
     fetch();
   };
 
+  // Edit
+  const statusHandle = async (id) => {
+    const res = await axios.get(`http://localhost:3000/contact/${id}`);
+    if (res.data.status == "Block") {
+      const res = await axios.patch(`http://localhost:3000/contact/${id}`, {
+        status: "Unblock",
+      });
+      if (res.status == 200) {
+        toast.success("Status Unblock success");
+        fetch();
+      }
+    } else {
+      const res = await axios.patch(`http://localhost:3000/contact/${id}`, {
+        status: "Block",
+      });
+      if (res.status == 200) {
+        localStorage.removeItem("id");
+        localStorage.removeItem("name");
+        toast.success("Status Block success");
+        fetch();
+      }
+    }
+  };
+
   return (
     <div>
       <div style={{ backgroundColor: "#BB9476" }}>
         <div className="content-wrapper pt-5">
-          <div className="container ">
+          <div className="container text-light">
             <div className="row pad-botm">
               <div className="col-md-12 text-center">
                 <h4
@@ -71,7 +96,14 @@ function Manage_contact() {
                                 <td>{value.name}</td>
                                 <td>{value.email}</td>
                                 <td>{value.comment}</td>
-                                <td>{value.status}</td>
+                                <td>
+                                  <button
+                                    class="btn btn-success"
+                                    onClick={() => statusHandle(value.id)}
+                                  >
+                                    {value.status}
+                                  </button>
+                                </td>
                                 <td>
                                   <button class="btn btn-success">Edit</button>
                                   <button

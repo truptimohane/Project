@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 function Admin_login() {
   useEffect(() => {
     if (localStorage.getItem("adminid")) {
-      redirect("/dashboard");
+      redirect("/admin-login");
     }
   }, []);
 

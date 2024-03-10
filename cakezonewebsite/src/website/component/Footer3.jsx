@@ -6,7 +6,7 @@ function Footer3() {
       {/* Footer Start */}
       <div
         className="container-fluid bg-dark bg-img text-secondary"
-        style={{ marginTop: 235 }}
+        style={{ marginTop: 150 }}
       >
         <div className="container">
           <div className="row gx-5">

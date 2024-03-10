@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 
-function Manage_services() {
+function Manage_feedback() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -11,22 +11,22 @@ function Manage_services() {
 
   // Fetch Data from API
   const fetch = async () => {
-    const res = await axios.get(`http://localhost:3000/services`);
+    const res = await axios.get(`http://localhost:3000/feedback`);
     console.log(res.data);
     setData(res.data); // set data from API in data var state
   };
 
   // Delete
   const deleteHandel = async (id) => {
-    const res = await axios.delete(`http://localhost:3000/services/${id}`);
+    const res = await axios.delete(`http://localhost:3000/feedback/${id}`);
     fetch();
   };
 
   // Edit
   const statusHandle = async (id) => {
-    const res = await axios.get(`http://localhost:3000/services/${id}`);
+    const res = await axios.get(`http://localhost:3000/feedback/${id}`);
     if (res.data.status == "Block") {
-      const res = await axios.patch(`http://localhost:3000/services/${id}`, {
+      const res = await axios.patch(`http://localhost:3000/feedback/${id}`, {
         status: "Unblock",
       });
       if (res.status == 200) {
@@ -34,7 +34,7 @@ function Manage_services() {
         fetch();
       }
     } else {
-      const res = await axios.patch(`http://localhost:3000/services/${id}`, {
+      const res = await axios.patch(`http://localhost:3000/feedback/${id}`, {
         status: "Block",
       });
       if (res.status == 200) {
@@ -45,7 +45,6 @@ function Manage_services() {
       }
     }
   };
-
   return (
     <div style={{ backgroundColor: "#BB9476" }}>
       <div className="content-wrapper pt-5">
@@ -59,7 +58,7 @@ function Manage_services() {
                   fontSize: "40px",
                 }}
               >
-                Manage Products
+                Manage Feedback
               </h4>
             </div>
           </div>
@@ -79,12 +78,10 @@ function Manage_services() {
                     >
                       <thead className="text-danger">
                         <tr>
-                          <th>ID</th>
-                          <th>Categories ID</th>
-                          <th>Service Name</th>
-                          <th>Service's Description</th>
-                          <th>Price</th>
-                          <th>Service Img</th>
+                          <th>ID.</th>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Comment</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
@@ -94,21 +91,9 @@ function Manage_services() {
                           return (
                             <tr className="odd gradeX">
                               <td>{value.id}</td>
-                              <td>{value.catg_id}</td>
-                              <td>{value.service_name}</td>
-                              <td>{value.service_desc}</td>
-                              <td>{value.price}</td>
-                              <td>
-                                <img
-                                  src={value.service_img}
-                                  alt=""
-                                  srcset=""
-                                  style={{
-                                    maxWidth: "100px",
-                                    maxHeight: "100px",
-                                  }}
-                                />
-                              </td>
+                              <td>{value.name}</td>
+                              <td>{value.email}</td>
+                              <td>{value.comment}</td>
                               <td>
                                 <button
                                   class="btn btn-success"
@@ -143,4 +128,4 @@ function Manage_services() {
   );
 }
 
-export default Manage_services;
+export default Manage_feedback;

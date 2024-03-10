@@ -66,7 +66,7 @@ function Menu() {
                         />
                         <div className="card-body">
                           <h5 className="card-title text-primary">
-                            {value.catg_name} : {value.id}
+                            {value.catg_name}
                           </h5>
                           <h5 className="mb-3"> {value.price}</h5>
                           <a

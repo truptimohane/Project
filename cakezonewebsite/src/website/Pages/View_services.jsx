@@ -64,9 +64,9 @@ function View_services() {
                         style={{ width: "100%", height: "300px" }}
                       />
                       <div className="card-body">
-                        <h5 className="card-title text-primary">
+                        {/* <h5 className="card-title text-primary">
                           {value.catg_id} : {value.id}
-                        </h5>
+                        </h5> */}
                         <h3
                           className="card-title text-success"
                           style={{ opacity: 0.7 }}

@@ -5,7 +5,7 @@
       "name": "Shreya",
       "email": "shreya123@gmail.com",
       "password": "12345",
-      "mobile": "1234567890",
+      "mobile": "1234567899",
       "img": "https://images.unsplash.com/photo-1491349174775-aaafddd81942?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
       "status": "Unblock"
     },
@@ -34,7 +34,7 @@
       "desc": "",
       "price": "999",
       "service_img": "http://localhost:3001/website/img/about.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Chocolate Cake",
       "service_desc": "Chocolate Cake"
     },
@@ -45,7 +45,7 @@
       "desc": "",
       "price": "599",
       "service_img": "https://www.fnp.com/images/pr/l/v20221118132140/chocolate-cream-cake-half-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Chocolate Cake",
       "service_desc": "Chocolate Cream Cake Half Kg"
     },
@@ -56,7 +56,7 @@
       "desc": "",
       "price": "575",
       "service_img": "https://www.fnp.com/images/pr/l/v20221214145651/chocolate-walnut-truffle-half-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Chocolate Cake",
       "service_desc": "Chocolate Walnut Truffle Cake- Half kg"
     },
@@ -67,7 +67,7 @@
       "desc": "",
       "price": "724",
       "service_img": "https://www.fnp.com/images/pr/l/v20211115155244/delicious-heart-shaped-chocolate-cake-half-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Chocolate Cake",
       "service_desc": "Delicious Heart Shaped Chocolate Cake- Half Kg"
     },
@@ -78,7 +78,7 @@
       "desc": "",
       "price": "675",
       "service_img": "https://www.fnp.com/images/pr/l/v20201019103013/death-by-chocolate-cake-half-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Chocolate Cake",
       "service_desc": "Death By Chocolate Cake Half Kg"
     },
@@ -89,7 +89,7 @@
       "desc": "",
       "price": "699",
       "service_img": "https://www.fnp.com/images/pr/l/v20190702132219/special-delicious-vanilla-cake-half-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Vanilla Cake",
       "service_desc": "Special Delicious Vanilla Cake Half kg"
     },
@@ -100,7 +100,7 @@
       "desc": "",
       "price": "724",
       "service_img": "https://www.fnp.com/images/pr/l/v20221205145931/floral-vanilla-cream-cake-half-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Vanilla Cake",
       "service_desc": "Floral Vanilla Cream Cake Half Kg"
     },
@@ -111,7 +111,7 @@
       "desc": "",
       "price": "750",
       "service_img": "https://www.fnp.com/images/pr/l/v20221130121944/vanilla-cake-with-gulab-jamun-half-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Vanilla Cake",
       "service_desc": "Vanilla Cake With Gulab Jamun Half kg"
     },
@@ -122,7 +122,7 @@
       "desc": "",
       "price": "695",
       "service_img": "https://www.fnp.com/images/pr/l/v20221205145901/creamy-red-velvet-cake-half-kg-eggless_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Red Velvet Cake",
       "service_desc": "Creamy Red Velvet Cake Half Kg Eggless"
     },
@@ -133,7 +133,7 @@
       "desc": "",
       "price": "573",
       "service_img": "https://www.fnp.com/images/pr/l/v20210630205542/red-velvet-heart-cake-half-kg-eggless_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Red Velvet Cake",
       "service_desc": "Red Velvet Heart Cake Half Kg Eggless"
     },
@@ -144,7 +144,7 @@
       "desc": "",
       "price": "599",
       "service_img": "https://images.unsplash.com/photo-1618426703623-c1b335803e07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnJvdCUyMGNha2V8ZW58MHx8MHx8fDA%3D",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Carrot Cake",
       "service_desc": "Carrot Cake Half Kg"
     },
@@ -155,7 +155,7 @@
       "desc": "",
       "price": "499",
       "service_img": "https://media.istockphoto.com/id/179640507/photo/strawberry-cheesecake.jpg?s=612x612&w=0&k=20&c=VKRS8I0OgwWseIXTOP_2_DwRBKgHVHyaAtQl2rDCxeY=",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Cheese Cake",
       "service_desc": "Cheese Cake Half Kg"
     },
@@ -166,7 +166,7 @@
       "desc": "",
       "price": "473",
       "service_img": "https://media.istockphoto.com/id/1405852592/photo/blueberry-cheesecake.jpg?s=612x612&w=0&k=20&c=G554WUVYRwAmBuDQZ0CzQcOp6o_na0x_ga--5Y5_OVc=",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Cheese Cake",
       "service_desc": "Cheese Cake Half kg"
     },
@@ -177,7 +177,7 @@
       "desc": "",
       "price": "583",
       "service_img": "https://media.istockphoto.com/id/1894455551/photo/chocolate-sponge-cake-cut-on-white-plate.jpg?s=612x612&w=0&k=20&c=Bn0iAIGnW5yyOedjdOSGjPp8Ys0U1mwILCo3kRPJNA0=",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Sponge Cake",
       "service_desc": "Super Sponge Cake Half kg"
     },
@@ -188,7 +188,7 @@
       "desc": "",
       "price": "825",
       "service_img": "https://www.fnp.com/images/pr/l/v20180518094011/chocolate-fruit-gateau-half-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Fruit Cake",
       "service_desc": "Chocolate Fruit Gateau Cake- Half kg"
     },
@@ -199,7 +199,7 @@
       "desc": "",
       "price": "724",
       "service_img": "https://www.fnp.com/images/pr/l/v20190524100626/heart-shaped-vanilla-fruit-cake-half-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Fruit Cake",
       "service_desc": "Heart Shaped Vanilla Fruit Cake- Half Kg"
     },
@@ -210,7 +210,7 @@
       "desc": "",
       "price": "877",
       "service_img": "https://www.fnp.com/images/pr/l/v20201019160418/rich-coffee-cream-cake-2-kg_1.jpg",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Coffee Cake",
       "service_desc": "Rich Coffee Cream Cake Half Kg"
     },
@@ -221,7 +221,7 @@
       "desc": "",
       "price": "599",
       "service_img": "https://media.istockphoto.com/id/1093301370/photo/coconut-chocolate-cake.jpg?s=612x612&w=0&k=20&c=ZzXvgwLho2Iei5-cRzIlKrlIUr7kJ1nZkf_gEph2HZA=",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Coconut Cake",
       "service_desc": "Coconut Cake Half Kg"
     },
@@ -232,7 +232,7 @@
       "desc": "",
       "price": "749",
       "service_img": "https://media.istockphoto.com/id/1436367629/photo/close-up-image-of-bakery-display-of-desserts-sliced-coffee-and-marbled-chocolate-cake-on.jpg?s=612x612&w=0&k=20&c=qdMyly8G12TZUA0pOrFgr8sJkA6uUDQyJ8csx0jmcE4=",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Marble Cake",
       "service_desc": "Marble Chocolate Cake Half kg"
     },
@@ -243,7 +243,7 @@
       "desc": "",
       "price": "897",
       "service_img": "https://media.istockphoto.com/id/1708321692/photo/marble-cake-include-chocolate-cream-sugar-with-knife-served-on-board-top-view-of-cafe-food.jpg?s=612x612&w=0&k=20&c=s7up8IZ74SSWZusmiKtl8g7cHKt6V0unRnutUhBImNU=",
-      "status": "Available",
+      "status": "Unblock",
       "service_name": "Marble Cake",
       "service_desc": "Marble cake including chocolate cream with 1 kg"
     }
@@ -302,42 +302,6 @@
   ],
   "employee": [
     {
-      "id": "1",
-      "name": "Employee1",
-      "email": " abc123@gamil.com ",
-      "password": "12345",
-      "mobile": "1234567890",
-      "img": "https://t3.ftcdn.net/jpg/01/65/63/94/240_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg",
-      "status": "Unblock"
-    },
-    {
-      "id": "2",
-      "name": "Employee2",
-      "email": " abc123@gamil.com ",
-      "password": "23451",
-      "mobile": "1234567890",
-      "img": "https://t3.ftcdn.net/jpg/01/65/63/94/240_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg",
-      "status": "Unblock"
-    },
-    {
-      "id": "3",
-      "name": "Employee3",
-      "email": " abc123@gamil.com ",
-      "password": "34512",
-      "mobile": "1234567890",
-      "img": "https://t3.ftcdn.net/jpg/01/65/63/94/240_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg",
-      "status": "Unblock"
-    },
-    {
-      "id": "4",
-      "name": "Employee4",
-      "email": " abc123@gamil.com ",
-      "password": "45123",
-      "mobile": "1234567890",
-      "img": "https://t3.ftcdn.net/jpg/01/65/63/94/240_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg",
-      "status": "Unblock"
-    },
-    {
       "id": "1709652106313",
       "name": "z",
       "email": "df@gmail.com",
@@ -348,22 +312,37 @@
   ],
   "contact": [
     {
-      "id": "1708498558716",
-      "name": "zoya",
-      "email": "zoya@gmail.com",
+      "id": "1710072732009",
+      "name": "Zoya",
+      "email": "zoya123@gmail.com",
       "subject": "Product sample",
-      "comment": "It is good product",
-      "status": "Avilable",
+      "comment": "Please supply products sample for us.",
+      "status": "Unblock",
       "catg_name": "",
-      "catg_img": ""
+      "catg_img": "",
+      "message": ""
     }
   ],
   "feedback": [
     {
-      "id": "1",
-      "name": "person1",
-      "email": "abc123@gmail.com",
-      "comment": "good services",
+      "id": "1710078111484",
+      "name": "Tara",
+      "email": "tara123@gmail.com",
+      "comment": "Your services is the best services.",
+      "status": "Unblock"
+    },
+    {
+      "id": "1710080296558",
+      "name": "Sara",
+      "email": "sara123@gmmail.com",
+      "comment": "Best services from your cake zone.",
+      "status": "Unblock"
+    },
+    {
+      "id": "1710080430463",
+      "name": "Arya",
+      "email": "arya123@gmail.com",
+      "comment": "Good products from your cake zone.",
       "status": "Unblock"
     }
   ]

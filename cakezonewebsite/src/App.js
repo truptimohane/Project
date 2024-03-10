@@ -16,6 +16,7 @@ import Signup from "./website/Pages/Signup";
 import PNF from "./website/Pages/PNF";
 
 // Adminside
+import Admin_login from "./Admin/Pages/Admin_login";
 import Dashboard from "./Admin/Pages/Dashboard";
 import AdminHeader from "./Admin/component/AdminHeader";
 import AdminFooter from "./Admin/component/AdminFooter";
@@ -24,12 +25,11 @@ import Manage_categories from "./Admin/Pages/Manage_categories";
 import Add_services from "./Admin/Pages/Add_services";
 import Manage_services from "./Admin/Pages/Manage_services";
 import Manage_user from "./Admin/Pages/Manage_user";
-// import Manage_Feedback from "./Admin/Pages/Manage_Feedback";
 import Add_emp from "./Admin/Pages/Add_emp";
 import Manage_emp from "./Admin/Pages/Manage_emp";
 import Manage_contact from "./Admin/Pages/Manage_contact";
 import View_services from "./website/Pages/View_services";
-import Admin_login from "./Admin/Pages/Admin_login";
+import Manage_feedback from "./Admin/Pages/Manage_feedback";
 
 function App() {
   return (
@@ -236,7 +236,7 @@ function App() {
             element={
               <>
                 <AdminHeader />
-                {/* <Manage_Feedback /> */}
+                <Manage_feedback />
                 <AdminFooter />
               </>
             }

@@ -64,8 +64,8 @@ function Header() {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav ms-auto mx-lg-auto py-0">
+        <div className="collapse navbar-collapse " id="navbarCollapse">
+          <div className="navbar-nav ms-auto mx-lg-auto ">
             <NavLink to="/" className="nav-item nav-link active">
               Home
             </NavLink>
