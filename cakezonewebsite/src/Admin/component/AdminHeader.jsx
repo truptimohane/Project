@@ -1,7 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function AdminHeader() {
+  const redirect = useNavigate();
+
+  // Delete session
+  const logout = () => {
+    localStorage.removeItem("adminid");
+    localStorage.removeItem("adminname");
+    toast.success("Logout Success");
+    redirect("/admin-login");
+  };
   return (
     <div>
       <div>
@@ -44,7 +55,7 @@ function AdminHeader() {
           <a href="index.html" className="navbar-brand d-block d-lg-none">
             <h1 className="m-0 text-uppercase text-white">
               <i className="fa fa-birthday-cake fs-1 text-primary me-3" />
-              {/* CakeZone */} ADMIN DASHBOARD
+              ADMIN DASHBOARD
             </h1>
           </a>
           <button
@@ -57,9 +68,9 @@ function AdminHeader() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto mx-lg-auto py-0">
-              <NavLink to="/admin-login" className="nav-item nav-link ">
+              {/* <NavLink to="/admin-login" className="nav-item nav-link ">
                 Admin Login
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 to="/admin-dashboard"
                 className="nav-item nav-link active"
@@ -89,14 +100,14 @@ function AdminHeader() {
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                 >
-                  Employee
+                  Chef
                 </NavLink>
                 <div className="dropdown-menu m-0">
-                  <NavLink to="/add-employee" className="dropdown-item">
-                    Add Employee
+                  <NavLink to="/add-chef" className="dropdown-item">
+                    Add Chef
                   </NavLink>
-                  <NavLink to="/manage-employee" className="dropdown-item">
-                    Manage Employee
+                  <NavLink to="/manage-chef" className="dropdown-item">
+                    Manage Chef
                   </NavLink>
                 </div>
               </div>
@@ -126,6 +137,51 @@ function AdminHeader() {
               <NavLink to="/manage_feedback" className="nav-item nav-link">
                 Feedback
               </NavLink>
+              <div
+                className="position-relative mx-auto"
+                style={{ maxWidth: 400 }}
+              >
+                {(() => {
+                  if (localStorage.getItem("adminid")) {
+                    return (
+                      <>
+                        <a
+                          href="javascript:void(0)"
+                          onClick={logout}
+                          className="btn mt-3 ms-3  d-none d-lg-block"
+                          style={{
+                            backgroundColor: "#E88F2A",
+                            borderRadius: "50%",
+                            color: "white",
+                            padding: "10px 15px",
+                            fontSize: "18px",
+                          }}
+                        >
+                          Logout
+                        </a>
+                      </>
+                    );
+                  } else {
+                    return (
+                      <>
+                        <Link
+                          to="/admin-login"
+                          className="btn  rounded-0 py-4 px-lg-5 d-none d-lg-block"
+                        >
+                          LOG IN
+                        </Link>
+                      </>
+                    );
+                  }
+                })()}
+
+                {/* <button
+                    type="button"
+                    className="btn btn-primary py-2 position-absolute  "
+                  >
+                    SignUp
+                  </button> */}
+              </div>
             </div>
           </div>
         </nav>

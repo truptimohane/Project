@@ -22,7 +22,7 @@ function Manage_user() {
     fetch();
   };
 
-  // Edit
+  // Stutus
   const statusHandle = async (id) => {
     const res = await axios.get(`http://localhost:3000/user/${id}`);
     if (res.data.status == "Block") {
@@ -41,6 +41,80 @@ function Manage_user() {
         localStorage.removeItem("id");
         localStorage.removeItem("name");
         toast.success("Status Block success");
+        fetch();
+      }
+    }
+  };
+
+  // Edit Data
+  const [formvalue, setFormvalue] = useState({
+    id: "",
+    name: "",
+    email: "",
+    password: "",
+    mobile: "",
+    img: "",
+  });
+
+  const editdata = async (id) => {
+    const res = await axios.get(`http://localhost:3000/user/${id}`);
+    console.log(res.data);
+    setFormvalue(res.data);
+  };
+
+  const getform = (e) => {
+    setFormvalue({ ...formvalue, [e.target.name]: e.target.value });
+    console.log(formvalue);
+  };
+
+  const validation = () => {
+    var result = true;
+    if (formvalue.name == "") {
+      toast.error("Name Field is required");
+      result = false;
+      return false;
+    }
+    if (formvalue.email == "") {
+      toast.error("Email Field is required");
+      result = false;
+      return false;
+    }
+    if (formvalue.password == "") {
+      toast.error("Password Field is required");
+      result = false;
+      return false;
+    }
+    if (formvalue.mobile == "") {
+      toast.error("Mobile Field is required");
+      result = false;
+      return false;
+    }
+    if (formvalue.img == "") {
+      toast.error("Image Field is required");
+      result = false;
+      return false;
+    }
+    return result;
+  };
+
+  const submithandel = async (e) => {
+    e.preventDefault(); // stop page reload
+    if (validation()) {
+      const res = await axios.patch(
+        `http://localhost:3000/user/${formvalue.id}`,
+        formvalue
+      );
+      console.log(res);
+      if (res.status == 200) {
+        setFormvalue({
+          ...formvalue,
+          name: "",
+          email: "",
+          password: "",
+          mobile: "",
+          img: "",
+        });
+        toast.success("Update success");
         fetch();
       }
     }
@@ -77,7 +151,7 @@ function Manage_user() {
                         borderCollapse: "collapse",
                       }}
                     >
-                      <thead className="text-danger">
+                      <thead className="text-light">
                         <tr>
                           <th>No.</th>
                           <th>Name</th>
@@ -118,13 +192,146 @@ function Manage_user() {
                                 </button>
                               </td>
                               <td>
-                                <button class="btn btn-success">Edit</button>
+                                <button
+                                  class="btn btn-success"
+                                  onClick={() => editdata(value.id)}
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#myModal"
+                                >
+                                  Edit
+                                </button>
                                 <button
                                   class="btn btn-danger"
                                   onClick={() => deleteHandel(value.id)}
                                 >
                                   Delete
                                 </button>
+                                <div className="modal" id="myModal">
+                                  <div className="modal-dialog">
+                                    <div className="modal-content">
+                                      {/* Modal Header */}
+                                      <div className="modal-header">
+                                        <h4 className="modal-title">
+                                          Edit User
+                                        </h4>
+                                        <button
+                                          type="button"
+                                          className="btn-close"
+                                          data-bs-dismiss="modal"
+                                        />
+                                      </div>
+                                      {/* Modal body */}
+                                      <div className="modal-body">
+                                        <div className="container">
+                                          <form action="" method="post">
+                                            <div className="row g-3">
+                                              <div className="col-md-12">
+                                                <div className="form-floating">
+                                                  <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    name="name"
+                                                    value={formvalue.name}
+                                                    onChange={getform}
+                                                    id="name"
+                                                    placeholder="Enter Your Name"
+                                                  />
+                                                  <label htmlFor="name">
+                                                    Name
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <div className="col-md-12">
+                                                <div className="form-floating">
+                                                  <input
+                                                    type="email"
+                                                    className="form-control"
+                                                    name="email"
+                                                    value={formvalue.email}
+                                                    onChange={getform}
+                                                    id="email"
+                                                    placeholder="Enter Your Email"
+                                                  />
+                                                  <label htmlFor="Type">
+                                                    Email
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <div className="col-md-12">
+                                                <div className="form-floating">
+                                                  <input
+                                                    type="password"
+                                                    className="form-control"
+                                                    name="Password"
+                                                    value={formvalue.password}
+                                                    onChange={getform}
+                                                    id="Password"
+                                                    placeholder="Enter Your Password"
+                                                  />
+                                                  <label htmlFor="Type">
+                                                    Password
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <div className="col-md-12">
+                                                <div className="form-floating">
+                                                  <input
+                                                    type="tel"
+                                                    className="form-control"
+                                                    name="mobile"
+                                                    value={formvalue.mobile}
+                                                    onChange={getform}
+                                                    id="mobile"
+                                                    placeholder="Enter Your Mobile"
+                                                  />
+                                                  <label htmlFor="Type">
+                                                    Mobile
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <div className="col-md-12">
+                                                <div className="form-floating">
+                                                  <input
+                                                    type="url"
+                                                    className="form-control"
+                                                    name="img"
+                                                    value={formvalue.img}
+                                                    onChange={getform}
+                                                    id="img"
+                                                    placeholder="Enter Image"
+                                                  />
+                                                  <label htmlFor="Type">
+                                                    Image
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <div className="col-12">
+                                                <button
+                                                  onClick={submithandel}
+                                                  data-bs-dismiss="modal"
+                                                  className="btn btn-primary w-100 py-3"
+                                                  type="submit"
+                                                >
+                                                  Save
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </form>
+                                        </div>
+                                      </div>
+                                      {/* Modal footer */}
+                                      <div className="modal-footer">
+                                        <button
+                                          type="button"
+                                          className="btn btn-danger"
+                                          data-bs-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </td>
                             </tr>
                           );

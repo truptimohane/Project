@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Add_categories() {
   const [formvalue, setFormvalue] = useState({
@@ -19,11 +20,11 @@ function Add_categories() {
 
   const submithandel = async (e) => {
     e.preventDefault(); // stop page reload
-    const res = await axios.post(`http://localhost:3000/categories`, formvalue);
+    const res = await axios.post(`http://localhost:3000/chefs`, formvalue);
     console.log(res);
     if (res.status == 201) {
       setFormvalue({ ...formvalue, catg_name: "", catg_img: "" });
-      alert("Categories submited success");
+      alert("Chef's details submited success");
       return false;
     }
   };

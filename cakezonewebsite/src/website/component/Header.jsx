@@ -118,6 +118,13 @@ function Header() {
                 <>
                   <a
                     href="javascript:void(0)"
+                    style={{
+                      backgroundColor: "#E88F2A",
+                      borderRadius: "50%",
+                      color: "white",
+                      padding: "10px 15px",
+                      fontSize: "18px",
+                    }}
                     onClick={logout}
                     className="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
                   >

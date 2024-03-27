@@ -81,13 +81,13 @@ function View_services() {
                           <span>Rs.</span>
                           {value.price} <span>Only/-</span>
                         </h5>
-                        <a
+                        {/* <a
                           className="btn btn-square"
                           onClick={() => redirect("/view_service/" + value.id)}
                           href="javascript:void(0)"
                         >
                           <i className="fa fa-arrow-right" />
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>

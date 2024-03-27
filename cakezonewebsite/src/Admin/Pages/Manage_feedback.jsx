@@ -76,7 +76,7 @@ function Manage_feedback() {
                         borderCollapse: "collapse",
                       }}
                     >
-                      <thead className="text-danger">
+                      <thead className="text-light">
                         <tr>
                           <th>ID.</th>
                           <th>Name</th>

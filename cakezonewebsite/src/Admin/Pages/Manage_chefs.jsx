@@ -11,22 +11,22 @@ function Manage_contact() {
 
   // Fetch Data from API
   const fetch = async () => {
-    const res = await axios.get(`http://localhost:3000/contact`);
+    const res = await axios.get(`http://localhost:3000/chefs`);
     console.log(res.data);
     setData(res.data); // set data from API in data var state
   };
 
   // Delete
   const deleteHandel = async (id) => {
-    const res = await axios.delete(`http://localhost:3000/contact/${id}`);
+    const res = await axios.delete(`http://localhost:3000/chefs/${id}`);
     fetch();
   };
 
   // Edit
   const statusHandle = async (id) => {
-    const res = await axios.get(`http://localhost:3000/contact/${id}`);
+    const res = await axios.get(`http://localhost:3000/chefs/${id}`);
     if (res.data.status == "Block") {
-      const res = await axios.patch(`http://localhost:3000/contact/${id}`, {
+      const res = await axios.patch(`http://localhost:3000/chefs/${id}`, {
         status: "Unblock",
       });
       if (res.status == 200) {
@@ -34,7 +34,7 @@ function Manage_contact() {
         fetch();
       }
     } else {
-      const res = await axios.patch(`http://localhost:3000/contact/${id}`, {
+      const res = await axios.patch(`http://localhost:3000/chefs/${id}`, {
         status: "Block",
       });
       if (res.status == 200) {
@@ -60,7 +60,7 @@ function Manage_contact() {
                     fontSize: "40px",
                   }}
                 >
-                  Manage Contact
+                  Manage Chef
                 </h4>
               </div>
             </div>
@@ -80,10 +80,9 @@ function Manage_contact() {
                       >
                         <thead className="text-light">
                           <tr>
-                            <th>No.</th>
+                            <th>ID.</th>
                             <th>Name</th>
-                            <th>Email</th>
-                            <th>Comment</th>
+                            <th>Designation</th>
                             <th>Status</th>
                             <th>Action</th>
                           </tr>
@@ -94,8 +93,7 @@ function Manage_contact() {
                               <tr className="odd gradeX">
                                 <td>{value.id}</td>
                                 <td>{value.name}</td>
-                                <td>{value.email}</td>
-                                <td>{value.comment}</td>
+                                <td>{value.designation}</td>
                                 <td>
                                   <button
                                     class="btn btn-success"

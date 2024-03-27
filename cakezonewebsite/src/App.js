@@ -30,6 +30,8 @@ import Manage_emp from "./Admin/Pages/Manage_emp";
 import Manage_contact from "./Admin/Pages/Manage_contact";
 import View_services from "./website/Pages/View_services";
 import Manage_feedback from "./Admin/Pages/Manage_feedback";
+import Add_chefs from "./Admin/Pages/Add_chefs";
+import Manage_chefs from "./Admin/Pages/Manage_chefs";
 
 function App() {
   return (
@@ -179,20 +181,20 @@ function App() {
             }
           ></Route>
           <Route
-            path="/add-employee"
+            path="/add-chef"
             element={
               <>
                 {" "}
-                <AdminHeader /> <Add_emp /> <AdminFooter />
+                <AdminHeader /> <Add_chefs /> <AdminFooter />
               </>
             }
           ></Route>
           <Route
-            path="/manage-employee"
+            path="/manage-chef"
             element={
               <>
                 {" "}
-                <AdminHeader /> <Manage_emp /> <AdminFooter />
+                <AdminHeader /> <Manage_chefs /> <AdminFooter />
               </>
             }
           ></Route>
