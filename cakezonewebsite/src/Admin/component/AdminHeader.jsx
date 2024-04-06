@@ -117,6 +117,23 @@ function AdminHeader() {
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                 >
+                  Blog
+                </NavLink>
+                <div className="dropdown-menu m-0">
+                  <NavLink to="/add-blog" className="dropdown-item">
+                    Add blog
+                  </NavLink>
+                  <NavLink to="/manage-blog" className="dropdown-item">
+                    Manage blog
+                  </NavLink>
+                </div>
+              </div>
+              <div className="nav-item dropdown">
+                <NavLink
+                  to="#"
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
                   Products
                 </NavLink>
                 <div className="dropdown-menu m-0">

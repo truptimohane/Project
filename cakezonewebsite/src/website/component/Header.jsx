@@ -98,6 +98,9 @@ function Header() {
             <NavLink to="/contact" className="nav-item nav-link">
               Contact Us
             </NavLink>
+            <NavLink to="/blog" className="nav-item nav-link">
+              Blog
+            </NavLink>
             <NavLink to="/feedback" className="nav-item nav-link">
               Feedback
             </NavLink>

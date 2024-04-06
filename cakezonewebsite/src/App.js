@@ -9,6 +9,7 @@ import Team from "./website/Pages/Team";
 import Service from "./website/Pages/Service";
 import Testimonial from "./website/Pages/Testimonial";
 import Contact from "./website/Pages/Contact";
+import Blog from "./website/Pages/Blog";
 import Feedback from "./website/Pages/Feedback";
 import Login from "./website/Pages/Login";
 import Profile from "./website/Pages/Profile";
@@ -25,13 +26,13 @@ import Manage_categories from "./Admin/Pages/Manage_categories";
 import Add_services from "./Admin/Pages/Add_services";
 import Manage_services from "./Admin/Pages/Manage_services";
 import Manage_user from "./Admin/Pages/Manage_user";
-import Add_emp from "./Admin/Pages/Add_emp";
-import Manage_emp from "./Admin/Pages/Manage_emp";
 import Manage_contact from "./Admin/Pages/Manage_contact";
 import View_services from "./website/Pages/View_services";
 import Manage_feedback from "./Admin/Pages/Manage_feedback";
 import Add_chefs from "./Admin/Pages/Add_chefs";
 import Manage_chefs from "./Admin/Pages/Manage_chefs";
+import Add_blog from "./Admin/Pages/Add_blog";
+import Manage_blog from "./Admin/Pages/Manage_blog";
 
 function App() {
   return (
@@ -92,6 +93,14 @@ function App() {
             element={
               <>
                 <Contact />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/blog"
+            element={
+              <>
+                <Blog />
               </>
             }
           ></Route>
@@ -195,6 +204,24 @@ function App() {
               <>
                 {" "}
                 <AdminHeader /> <Manage_chefs /> <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/add-blog"
+            element={
+              <>
+                {" "}
+                <AdminHeader /> <Add_blog /> <AdminFooter />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/manage-blog"
+            element={
+              <>
+                {" "}
+                <AdminHeader /> <Manage_blog /> <AdminFooter />
               </>
             }
           ></Route>

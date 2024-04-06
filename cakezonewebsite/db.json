@@ -318,6 +318,14 @@
       "status": "Unblock"
     }
   ],
+  "blog": [
+    {
+      "id": "0ae0",
+      "title": "Today's special",
+      "date": "2024-04-05",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FrZXN8ZW58MHx8MHx8fDA%3D"
+    }
+  ],
   "contact": [
     {
       "id": "1710072732009",
